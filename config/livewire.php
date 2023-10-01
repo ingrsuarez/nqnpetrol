@@ -41,7 +41,7 @@ return [
     'layout' => 'layouts.app',
 
 
-    'asset_url' => "/xnztech/vendor",
+    'asset_url' => "/xnztech/public",
 
     /*
     |--------------------------------------------------------------------------
@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'app_url' => "http://localhost/xnztech/vendor",
+    'app_url' => "http://localhost/xnztech",
 
     /*
     |---------------------------------------------------------------------------
