@@ -8,11 +8,13 @@
             <nav class="flex items-center justify-between h-20 gap-12">
                 <a
                     href="#"
-                    class="ml-4 inline-flex items-center gap-3 text-lg font-bold md:text-xl"
+                    class="ml-4 mt-8 inline-flex items-center gap-3 text-lg font-bold md:text-xl"
                 >
-                    <div class="flex items-center justify-center w-8 h-8 rounded-lg shadow-lg border-y shadow-primary-700/20 bg-gradient-to-b from-primary-500 to-primary-600 border-t-primary-400 border-b-primary-700"
-                        >
-                        <span>XNZ</span>
+                    {{-- <div class="flex items-center justify-center w-20 h-20 rounded-lg shadow-lg border-y shadow-primary-700/20 bg-gradient-to-b from-primary-500 to-primary-600 border-t-primary-400 border-b-primary-700"
+                        > --}}
+                    <div class="w-40 flex items-center justify-center">
+                        <img src="{{asset('img/06/Isologo-HIO-DEV-1536x555.png')}}" alt="">
+                        {{-- <span>HIO</span> --}}
                     </div>
                     
                     <span></span>
@@ -23,21 +25,21 @@
                         <a
                         class="transition relative h-20 inline-flex items-center text-gray-300 hover:text-white"
                         href="#"
-                        >Inicio</a>
+                        >Home</a>
                     </li>
             
                     <li>
                         <a
                         class="transition relative h-20 inline-flex items-center text-gray-300 hover:text-white"
                         href="#"
-                        >Servicios</a>
+                        >Services</a>
                     </li>
             
                     <li>
                         <a
                         class="transition relative h-20 inline-flex items-center text-gray-300 hover:text-white"
                         href="#"
-                        >Equipo</a>
+                        >Team</a>
                     </li>
             
                     <li>
@@ -120,14 +122,14 @@
                         <a
                         class="transition relative h-20 inline-flex items-center text-gray-300 hover:text-white"
                         href="#" target="_blank"
-                        >Novedades</a>
+                        >News</a>
                     </li>
             
                     <li>
                         <a
                         class="transition relative h-20 inline-flex items-center text-gray-300 hover:text-white"
                         href="#"
-                        >Contacto</a>
+                        >Contact</a>
                     </li>
                     
                     <li
@@ -397,7 +399,7 @@
                 <header class="flex flex-col items-center text-start">
     
                     <h3 class="mt-4 mb-16 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter max-w-[20ch]">
-                        XNZ Technologies
+                        Hole In One
                     </h3>
                 </header>
             </div>
@@ -408,41 +410,41 @@
         
         <div class="group relative">
             <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-              <img src="img/06/image-12-768x512.jpeg" alt="Desarrollo de software a medida" class="h-full w-full object-cover object-center">
+              <img src="img/06/fondo3.jpeg" alt="Desarrollo de software a medida" class="h-full w-full object-cover object-center">
             </div>  
             <h3 class="mt-6 text-sm text-gray-500">
               <a href="#">
                 <span class="absolute inset-0"></span>
-                Desarrollo de software.
+                Ecometer
               </a>
             </h3>
-            <p class="text-base font-semibold text-gray-900">Desarrollamos, implementamos y actualizamos sus sistemas.</p>
+            <p class="text-base font-semibold text-gray-900">Mesurments field services, well optimization.</p>
           
         </div>
         <div class="group relative">
             <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-              <img src="img/06/image-9-768x512.jpeg" alt="Desarrollo de software a medida" class="h-full w-full object-cover object-center">
+              <img src="img/06/fondo3.jpg" alt="Desarrollo de software a medida" class="h-full w-full object-cover object-center">
             </div>  
             <h3 class="mt-6 text-sm text-gray-500">
               <a href="#">
                 <span class="absolute inset-0"></span>
-                    Inteligencia Artifical aplicada.
+                    Hot Oil services.
               </a>
             </h3>
-            <p class="text-base font-semibold text-gray-900">Detección de eventos por video analítica y predicción con ciencia de datos.</p>
+            <p class="text-base font-semibold text-gray-900">Hot Oil dispatch services, water transport from field.</p>
           
         </div>
         <div class="group relative">
             <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-              <img src="img/06/image-15-768x509.jpeg" alt="Desarrollo de software a medida" class="h-full w-full object-cover object-center">
+              <img src="img/06/image-12.jpeg" alt="Desarrollo de software a medida" class="h-full w-full object-cover object-center">
             </div>  
             <h3 class="mt-6 text-sm text-gray-500">
               <a href="#">
                 <span class="absolute inset-0"></span>
-                Automatización de procesos.
+                Analitics.
               </a>
             </h3>
-            <p class="text-base font-semibold text-gray-900">Análisis de datos, automatización con RPA.</p>
+            <p class="text-base font-semibold text-gray-900">Data analitics, well optimization and monitorization.</p>
           
         </div>          
           
@@ -452,13 +454,13 @@
     <div class="bg-white py-10 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:text-center">
-                <h2 class="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
-                <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Soluciones simples a problemas complejos.</p>
-                <p class="mt-6 text-lg leading-8 text-gray-600">Mejor perfomance en diseño y desarrollo.</p>
+                <h2 class="text-base font-semibold leading-7 text-indigo-600">Oil and Gas services</h2>
+                <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Deploy fast services.</p>
+                <p class="mt-6 text-lg leading-8 text-gray-600">Customer solutions.</p>
         
-            CONTACTANOS:
+            CONTACT:
 
-            <a href="mailto:info@xnztech.dev"> info@xnztech.dev</a>
+            <a href="mailto:info@xnztech.dev"> info@hio.dev</a>
             </div>
        
             <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -470,9 +472,9 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
                                 </svg>
                             </div>
-                            Desarrollo
+                            Field services.
                         </dt>
-                        <dd class="mt-2 text-base leading-7 text-gray-600">Identificamos, desarrollamos e implementamos sistemas para cada necesidad.</dd>
+                        <dd class="mt-2 text-base leading-7 text-gray-600">Customer support.</dd>
     
                     </div>
 
@@ -484,10 +486,10 @@
                                 </svg>
                             </div>
                           
-                          Análisis de datos.
+                          Data analitics.
                         </dt>
                         <dd class="mt-2 text-base leading-7 text-gray-600">
-                            Análisis predictivos, optimización de procesos, diseño de tableros de control.
+                            More than 20 years experienced team in field services.
                         </dd>
                     </div>
 
@@ -499,7 +501,7 @@
                                 </svg>
                             </div>
                           
-                            Automatización y control de procesos.
+                            Automation and process control.
                         </dt>
                         <dd class="mt-2 text-base leading-7 text-gray-600">
                             • RPA, 2NV. <br>
@@ -518,12 +520,12 @@
                                 </svg>
                             </div>
                           
-                            Arquitecturas de hardware.
+                            Hardware solutions.
                         </dt>
                         <dd class="mt-2 text-base leading-7 text-gray-600">
-                            • Diseño de hardware. <br>
-                            • Control de acceso. <br>
-                            • Detección de eventos.
+                            • Design. <br>
+                            • Control. <br>
+                            • Events detection.
 
 
                         </dd>
@@ -534,6 +536,10 @@
             </div>
         </div>
     </div> 
-    
+    <footer class="container ml-8 pb-8">
+        <img class="w-20" src="{{asset('img/06/Isologo-HIO-DEV-1536x555.png')}}" alt="">
+        <p class="float-right text-orange-400"><a href="#">Back to top</a></p>
+        <p>&copy; Hole in One Software Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
     
 </x-guest-layout>
