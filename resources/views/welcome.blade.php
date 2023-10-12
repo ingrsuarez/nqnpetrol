@@ -396,9 +396,9 @@
             </div>
         
             <div class="container relative">
-                <header class="flex flex-col items-start text-start">
+                <header class="flex flex-col items-center text-start">
     
-                    <h3 class="translate-x-96 ease-linear duration-1000 mt-4 mb-16 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter max-w-[20ch]">
+                    <h3 class="mt-4 mb-16 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter max-w-[20ch]">
                         Hole In One
                     </h3>
                 </header>
