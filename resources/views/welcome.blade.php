@@ -396,9 +396,9 @@
             </div>
         
             <div class="container relative">
-                <header class="flex flex-col items-center text-start">
+                <header class="flex flex-col items-start text-start">
     
-                    <h3 class="mt-4 mb-16 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter max-w-[20ch]">
+                    <h3 class="translate-x-96 ease-linear duration-1000 mt-4 mb-16 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter max-w-[20ch]">
                         Hole In One
                     </h3>
                 </header>
@@ -441,10 +441,10 @@
             <h3 class="mt-6 text-sm text-gray-500">
               <a href="#">
                 <span class="absolute inset-0"></span>
-                Analitics.
+                Analitycs.
               </a>
             </h3>
-            <p class="text-base font-semibold text-gray-900">Data analitics, well optimization and monitorization.</p>
+            <p class="text-base font-semibold text-gray-900">Data analitycs, well optimization and monitorization.</p>
           
         </div>          
           
@@ -486,7 +486,7 @@
                                 </svg>
                             </div>
                           
-                          Data analitics.
+                          Data analitycs.
                         </dt>
                         <dd class="mt-2 text-base leading-7 text-gray-600">
                             More than 20 years experienced team in field services.
