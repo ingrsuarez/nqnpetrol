@@ -39,10 +39,10 @@
                             and thorough data analysis.    
                         </p>
                     </div>
-                    <div class="w-20 lg:w-20 order-2 group-hover:w-10 justify-end duration-1000 border-2 border-gray-400">
+                    <div class="hidden md:flex w-20 lg:w-20 order-2 group-hover:w-10 justify-end duration-1000 border-2 border-gray-400">
                         {{--Line--}}  
                     </div>
-                    <div class="flex order-3 w-1/5 justify-start">
+                    <div class="hidden md:flex order-3 w-1/5 justify-start">
                         <img class="h-20 -mr-2 pointer-events-none" src="{{asset('img/06/rocket.png')}}" alt="">
                     </div>
                   
@@ -56,14 +56,14 @@
             <!-- Second item -->
 
             <div class="relative h-80 mb-8 grid grid-cols-1 gap-0 md:grid-cols-2 justify- w-full">
-                <div class="flex rounded-lg justify-end select-none">
+                <div class="order-2 md:order-1 flex rounded-lg justify-center md:justify-end select-none">
                     <img class="m-2 pointer-events-none rounded-lg order-last" src="{{asset('img/06/integrity.jpg')}}" alt="">
                 </div>
-                <div class="order-1 group flex flex-row items-center justify-start">
-                    <div class="flex order-1 w-1/5 justify-end">
+                <div class="order-1 md:order-2 group flex flex-row items-center justify-start">
+                    <div class="hidden md:flex order-1 w-1/5 justify-end">
                         <img class="h-20 -mr-2 pointer-events-none" src="{{asset('img/06/pin.png')}}" alt="">
                     </div>
-                    <div class="w-20 lg:w-20 order-2 group-hover:w-10  duration-1000 border-2 border-gray-400">
+                    <div class="w-20 hidden md:flex order-2 group-hover:w-10  duration-1000 border-2 border-gray-400">
                         {{--Line--}}  
                     </div> 
                     <div class="order-3 bg-gray-400 cursor-pointer rounded-lg shadow-xl w-80 px-4 py-2">
@@ -84,7 +84,7 @@
             <!-- Third item -->
 
 
-            <div class="relative h-80 mb-8 grid grid-cols-1 md:grid-cols-2 w-full bg-white">
+            <div class="relative h-fit lg:h-96 mb-8 grid grid-cols-1 md:grid-cols-2 w-full bg-white">
                 
                 <div class="order-1 group flex flex-row items-center justify-end">
                     
@@ -97,31 +97,31 @@
 
                         </p>
                     </div>
-                    <div class="w-20 lg:w-20 order-2 group-hover:w-10 justify-end duration-1000 border-2 border-gray-400">
+                    <div class="w-20 hidden md:flex order-2 group-hover:w-10 justify-end duration-1000 border-2 border-gray-400">
                         {{--Line--}}  
                     </div>
-                    <div class="flex order-3 w-1/5 justify-start">
+                    <div class="hidden md:flex order-3 w-1/5 justify-start">
                         <img class="h-20 -mr-2 pointer-events-none" src="{{asset('img/06/lamp.png')}}" alt="">
                     </div>
                   
                     
                 </div>
-                <div class="flex order-2 items-center rounded-lg w-full justify-center select-none">
+                <div class="flex order-2 items-center rounded-lg w-fit lg:w-full justify-center select-none">
                     <img class="m-2 p-4 pointer-events-none w-2/5" src="{{asset('img/06/respect2.jpg')}}" alt="">
                 </div>
             </div>
 
             <!-- Fourth item -->
 
-            <div class="relative h-80 mb-8 grid grid-cols-1 gap-0 md:grid-cols-2 justify- w-full">
-                <div class="flex rounded-lg justify-end select-none">
+            <div class="relative h-fit lg:h-96 mb-8 grid grid-cols-1 gap-0 md:grid-cols-2 justify- w-full">
+                <div class="order-2 md:order-1 flex rounded-lg justify-end select-none">
                     <img class="m-2 pointer-events-none rounded-lg order-last" src="{{asset('img/06/responsability.jpg')}}" alt="">
                 </div>
-                <div class="order-1 group flex flex-row items-center justify-start">
-                    <div class="flex order-1 w-1/5 justify-end">
+                <div class="order-1 md:order-2 group flex flex-row items-center justify-start">
+                    <div class="hidden lg:flex order-1 w-1/5 justify-end">
                         <img class="h-20 -mr-2 pointer-events-none" src="{{asset('img/06/trophy.png')}}" alt="">
                     </div>
-                    <div class="w-20 lg:w-20 order-2 group-hover:w-10  duration-1000 border-2 border-gray-400">
+                    <div class="w-20 hidden lg:flex lg:w-20 order-2 group-hover:w-10  duration-1000 border-2 border-gray-400">
                         {{--Line--}}  
                     </div> 
                     <div class="order-3 bg-gray-400 cursor-pointer rounded-lg shadow-xl w-80 px-4 py-2">
