@@ -31,7 +31,7 @@
                 <div class="order-1 group flex flex-row items-center justify-end">
                     
                     <div class="order-1 bg-gray-400 cursor-pointer rounded-lg shadow-xl w-96 px-4 py-2">
-                        <h3 class="mb-3 select-none font-bold text-pink-7   00 text-xl">Excellence</h3>
+                        <h3 class="mb-3 select-none font-bold text-pink-700 text-xl">Excellence</h3>
                         <p class="text-sm select-none leading-snug tracking-wide text-gray-900 text-opacity-100">
                         
                             Our business requires focused innovation and evaluation of new opportunities. 
