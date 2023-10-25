@@ -16,13 +16,13 @@
 
         {{-- Captcha --}}
         {{-- {!! NoCaptcha::renderJs() !!} --}}
-        <script src="https://www.google.com/recaptcha/api.js?render=6LdbrsMoAAAAAAWG8cOd6vVIp4t49fjdF2tnvvyY"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=6Lc2I8woAAAAAI4fDjYwAr9qD4tnHjLRm1NCrfBV"></script>
 
         <script>
             document.addEventListener('submit',function(e){
                 e.preventDefault();
                 grecaptcha.ready(function() {
-                    grecaptcha.execute('6LdbrsMoAAAAAAWG8cOd6vVIp4t49fjdF2tnvvyY', {action: 'submit'}).then(function(token) {
+                    grecaptcha.execute('6Lc2I8woAAAAAI4fDjYwAr9qD4tnHjLRm1NCrfBV', {action: 'submit'}).then(function(token) {
                         let form = e.target;
                         let input = document.createElement('input');
                         input.type = 'hidden';
