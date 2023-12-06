@@ -26,7 +26,7 @@
             hover:bg-slate-50 hover:text-inherit hover:outline-none
             focus:bg-slate-50 focus:text-inherit focus:outline-none"
             data-active="{{ Route::currentRouteName()=='employee.new' ? 'active' : ''}}"
-            href="#">
+            href="{{route('employee.new')}}">
                 
                 <span
                     class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
@@ -41,25 +41,7 @@
                         <path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                     </svg>
                 </span>
-                <span>Nuevo Personal </span>
-            </a>
-
-            <a class="text-gray-300 flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem]
-            data-[active=active]:bg-slate-50  data-[active=active]:text-inherit
-            hover:bg-slate-50 hover:text-inherit hover:outline-none
-            focus:bg-slate-50 focus:text-inherit focus:outline-none"
-            data-active="{{ Route::currentRouteName()=='positions.new' ? 'active' : ''}}"
-            href="#">
-                
-                <span
-                    
-                    class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:fill-gray-400 dark:[&>svg]:fill-gray-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path
-                        d="M80 104c13.3 0 24-10.7 24-24s-10.7-24-24-24S56 66.7 56 80s10.7 24 24 24zm80-24c0 32.8-19.7 61-48 73.3v87.8c18.8-10.9 40.7-17.1 64-17.1h96c35.3 0 64-28.7 64-64v-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V160c0 70.7-57.3 128-128 128H176c-35.3 0-64 28.7-64 64v6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V352 153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24zM80 456c13.3 0 24-10.7 24-24s-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24z" />
-                    </svg>
-                </span>
-                <span>Puestos </span>
+                <span>Nuevo empleado </span>
             </a>
 
             <a class="text-gray-300 flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem]
@@ -67,7 +49,7 @@
             hover:bg-slate-50 hover:text-inherit hover:outline-none
             focus:bg-slate-50 focus:text-inherit focus:outline-none"
             data-active="{{ Route::currentRouteName()=='patient.index' ? 'active' : ''}}"
-            href="#">
+            href="{{route('leave.new')}}">
                 
                 <span
                     class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
@@ -84,12 +66,125 @@
                         d="M12 4.5v15m7.5-7.5h-15" />
                     </svg>
                 </span>
-                <span>Ingresar Licencia</span>
+                <span>Licencias</span>
+            </a>
+
+
+            <a class="text-gray-300 flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem]
+            data-[active=active]:bg-slate-50  data-[active=active]:text-inherit
+            hover:bg-slate-50 hover:text-inherit hover:outline-none
+            focus:bg-slate-50 focus:text-inherit focus:outline-none"
+            data-active="{{ Route::currentRouteName()=='positions.new' ? 'active' : ''}}"
+            href="{{route('job.chart')}}">
+                
+                <span
+                    
+                    class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:fill-gray-400 dark:[&>svg]:fill-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                        d="M80 104c13.3 0 24-10.7 24-24s-10.7-24-24-24S56 66.7 56 80s10.7 24 24 24zm80-24c0 32.8-19.7 61-48 73.3v87.8c18.8-10.9 40.7-17.1 64-17.1h96c35.3 0 64-28.7 64-64v-6.7C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V160c0 70.7-57.3 128-128 128H176c-35.3 0-64 28.7-64 64v6.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V352 153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm232 0c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24zM80 456c13.3 0 24-10.7 24-24s-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24z" />
+                    </svg>
+                </span>
+                <span>Organigrama </span>
+            </a>
+
+
+            <a class="text-gray-300 flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem]
+            data-[active=active]:bg-slate-50  data-[active=active]:text-inherit
+            hover:bg-slate-50 hover:text-inherit hover:outline-none
+            focus:bg-slate-50 focus:text-inherit focus:outline-none"
+            data-active="{{ Route::currentRouteName()=='job.new' ? 'active' : ''}}"
+            href="{{route('job.new')}}">
+                
+                <span
+                    class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-5 w-5">
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                </span>
+                <span>Nuevo Puesto</span>
+            </a>
+
+            <a class="text-gray-300 flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem]
+            data-[active=active]:bg-slate-50  data-[active=active]:text-inherit
+            hover:bg-slate-50 hover:text-inherit hover:outline-none
+            focus:bg-slate-50 focus:text-inherit focus:outline-none"
+            data-active="{{ Route::currentRouteName()=='positions.new' ? 'active' : ''}}"
+            href="{{ route('category.new') }}">
+                
+                <span
+                    class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:fill-gray-400 dark:[&>svg]:fill-gray-300">
+                    <svg fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    viewBox="0 0 512 512" xml:space="preserve">
+                    <g>
+                        <path d="M80,352c4.418,0,8-3.582,8-8v-48c0-13.233,10.767-24,24-24h136v72c0,4.418,3.582,8,8,8s8-3.582,8-8v-72h136
+                            c13.233,0,24,10.767,24,24v48c0,4.418,3.582,8,8,8s8-3.582,8-8v-48c0-22.056-17.944-40-40-40H264v-24c0-4.418-3.582-8-8-8
+                            s-8,3.582-8,8v24H112c-22.056,0-40,17.944-40,40v48C72,348.418,75.582,352,80,352z"/>
+                        <path d="M144,208h224c4.418,0,8-3.582,8-8s-3.582-8-8-8h-8V32c0-4.418-3.582-8-8-8H160c-4.418,0-8,3.582-8,8v160h-8
+                            c-4.418,0-8,3.582-8,8S139.582,208,144,208z M168,40h176v152H168V40z"/>
+                        <path d="M224,120c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C232,123.582,228.418,120,224,120z"/>
+                        <path d="M256,120c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C264,123.582,260.418,120,256,120z"/>
+                        <path d="M288,120c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C296,123.582,292.418,120,288,120z"/>
+                        <path d="M320,120c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C328,123.582,324.418,120,320,120z"/>
+                        <path d="M192,120c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C200,123.582,196.418,120,192,120z"/>
+                        <path d="M224,152c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C232,155.582,228.418,152,224,152z"/>
+                        <path d="M256,152c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C264,155.582,260.418,152,256,152z"/>
+                        <path d="M288,152c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C296,155.582,292.418,152,288,152z"/>
+                        <path d="M320,152c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C328,155.582,324.418,152,320,152z"/>
+                        <path d="M192,152c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C200,155.582,196.418,152,192,152z"/>
+                        <path d="M328,472v-96c0-4.418-3.582-8-8-8H192c-4.418,0-8,3.582-8,8v96c-4.418,0-8,3.582-8,8s3.582,8,8,8h144c4.418,0,8-3.582,8-8
+                            S332.418,472,328,472z M200,384h112v88H200V384z"/>
+                        <path d="M224,400c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C232,403.582,228.418,400,224,400z"/>
+                        <path d="M256,400c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C264,403.582,260.418,400,256,400z"/>
+                        <path d="M288,400c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C296,403.582,292.418,400,288,400z"/>
+                        <path d="M224,432c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C232,435.582,228.418,432,224,432z"/>
+                        <path d="M256,432c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C264,435.582,260.418,432,256,432z"/>
+                        <path d="M288,432c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C296,435.582,292.418,432,288,432z"/>
+                        <path d="M224,88c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C232,91.582,228.418,88,224,88z"/>
+                        <path d="M256,88c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C264,91.582,260.418,88,256,88z"/>
+                        <path d="M288,88c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C296,91.582,292.418,88,288,88z"/>
+                        <path d="M320,88c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C328,91.582,324.418,88,320,88z"/>
+                        <path d="M192,88c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C200,91.582,196.418,88,192,88z"/>
+                        <path d="M224,56c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C232,59.582,228.418,56,224,56z"/>
+                        <path d="M256,56c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C264,59.582,260.418,56,256,56z"/>
+                        <path d="M288,56c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C296,59.582,292.418,56,288,56z"/>
+                        <path d="M320,56c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C328,59.582,324.418,56,320,56z"/>
+                        <path d="M192,56c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C200,59.582,196.418,56,192,56z"/>
+                        <path d="M152,472v-96c0-4.418-3.582-8-8-8H16c-4.418,0-8,3.582-8,8v96c-4.418,0-8,3.582-8,8s3.582,8,8,8h144c4.418,0,8-3.582,8-8
+                            S156.418,472,152,472z M24,384h112v88H24V384z"/>
+                        <path d="M48,400c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C56,403.582,52.418,400,48,400z"/>
+                        <path d="M80,400c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C88,403.582,84.418,400,80,400z"/>
+                        <path d="M112,400c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C120,403.582,116.418,400,112,400z"/>
+                        <path d="M48,432c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C56,435.582,52.418,432,48,432z"/>
+                        <path d="M80,432c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C88,435.582,84.418,432,80,432z"/>
+                        <path d="M112,432c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C120,435.582,116.418,432,112,432z"/>
+                        <path d="M504,472v-96c0-4.418-3.582-8-8-8H368c-4.418,0-8,3.582-8,8v96c-4.418,0-8,3.582-8,8s3.582,8,8,8h144c4.418,0,8-3.582,8-8
+                            S508.418,472,504,472z M376,384h112v88H376V384z"/>
+                        <path d="M400,400c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C408,403.582,404.418,400,400,400z"/>
+                        <path d="M432,400c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C440,403.582,436.418,400,432,400z"/>
+                        <path d="M464,400c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C472,403.582,468.418,400,464,400z"/>
+                        <path d="M400,432c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C408,435.582,404.418,432,400,432z"/>
+                        <path d="M432,432c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C440,435.582,436.418,432,432,432z"/>
+                        <path d="M464,432c-4.418,0-8,3.582-8,8v8c0,4.418,3.582,8,8,8s8-3.582,8-8v-8C472,435.582,468.418,432,464,432z"/>
+                    </g>
+                    </svg>
+
+                </span>
+                <span>Categorías </span>
             </a>
         </div>
     </li>
-  
-    <li class="relative">
+    
+    {{-- <li class="relative">
         <a
         class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
         data-te-sidenav-link-ref>
@@ -108,7 +203,7 @@
         </span>
         <span>Online code editor</span>
         </a>
-    </li>
+    </li> --}}
 
     @can('administrator')
         <li class="relative pt-4">
@@ -134,7 +229,7 @@
             </a>
         </li>
 
-        <li class="relative">
+        {{-- <li class="relative">
             <a
             class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
             data-te-sidenav-link-ref>
@@ -214,10 +309,10 @@
             </span>
             <span>Team</span>
             </a>
-        </li>
+        </li> --}}
         
     @endcan
-
+{{-- 
     <li class="relative">
         <a
         class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
@@ -267,7 +362,7 @@
         </span>
         <span>GitLab</span>
         </a>
-    </li>
+    </li> --}}
     </ul>
     </nav>
     <!-- Sidenav -->

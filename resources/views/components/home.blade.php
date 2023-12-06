@@ -52,7 +52,7 @@
                             {{-- <div class="flex items-center justify-center w-20 h-20 rounded-lg shadow-lg border-y shadow-primary-700/20 bg-gradient-to-b from-primary-500 to-primary-600 border-t-primary-400 border-b-primary-700"
                                 > --}}
                             <div class="w-36 flex items-center justify-center shadow-2xl ">
-                                <img class="shadow-lg rounded-md bg-gray-100 hover:scale-90 " src="{{asset('img/06/Isologo-HIO-DEV-300x108.png')}}" alt="Cimad">
+                                <img class="shadow-lg rounded-md bg-gray-100 hover:scale-90 " src="{{asset('img/brand/nqnlogo.jpg')}}" alt="NQN PETROL">
                                
                             </div>
                             

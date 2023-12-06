@@ -4,12 +4,12 @@
                 
         {{-- <img class="rounded-md w-full" src="{{asset('img/trabajadores01.jpg')}}" alt=""> --}}
         <div class="relative">
-            <img class="w-screen shadow-lg pointer-events-none" src="{{asset('img/06/system-optimization02.jpg')}}" alt="">
+            <img class="w-screen shadow-lg pointer-events-none" src="{{asset('img/06/fondoTeam.jpg')}}" alt="">
             <div class="lg:absolute relative cursor-pointer lg:top-40 lg:left-20 px-4 py-3 lg:w-fit  rounded-lg">
-                <h1 class="text-orange-500 font-bold text-5xl select-none  hover:text-orange-300">HIO DEV
+                <h1 class="text-orange-500 font-bold text-5xl select-none  hover:text-orange-300">NQN PETROL
                 </h1>
                 <br>
-                <p class="text-gray-400 lg:text-white text-xl shadow-2xl select-none">HUB Optimization of Technological’s Processes
+                <p class="text-gray-400 lg:text-white text-xl shadow-2xl select-none">Técnología de optimización
 
             </div>
             <div class="border-2">

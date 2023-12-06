@@ -1,32 +1,40 @@
 <div class="p-6 lg:p-8 bg-white border-b border-gray-200">
-    <x-application-logo class="block h-12 w-auto" />
+    <x-application-logo class="block h-40" />
+    <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8">
+        
+        <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+            
+            <img src="img/06/fondo3.jpeg" alt="Desarrollo de software a medida" class="h-full w-full object-cover object-center">
+        </div>
+        <h1 class="mt-8 text-2xl font-medium text-gray-900">
+            Mission:
+        </h1>
+        <p class="mt-6 text-gray-500 leading-relaxed">
+            Our mission is provide technical tools necesary to improve and optimize indicators
+    
+            Our mission is to provide the technical, technological and human tools necessary to improve and optimize the indicators.
+            of hydrocarbon production, both tangible and intangible. Our main objective is to provide support and assistance to the areas of operations,
+            production engineering and control room that need it.
+            To achieve this, we will establish an operating philosophy for Conventional and Unconventional wells, focusing especially 
+            on maximizing the capabilities provided by real-time remote monitoring and optimization tools, even remotely from our system. 
+            This includes the integration of the Control Center (CC) and the creation of collaborative environments.
+    
+            Además, estableceremos criterios de diagnóstico, operación y optimización específicos para pozos Surgentes y aquellos con Sistema de Extracción Artificial. 
+            Estamos comprometidos a utilizar todas las tecnologías y conocimientos disponibles para garantizar el mejor rendimiento en la producción de hidrocarburos, 
+            cumpliendo siempre con los más altos estándares de seguridad, salud y cuidado del medio ambiente.
+    
+        </p>
 
-    <h1 class="mt-8 text-2xl font-medium text-gray-900">
-        Misión:
-    </h1>
 
-    <p class="mt-6 text-gray-500 leading-relaxed">
-        Nuestra misión es proporcionar las herramientas técnicas, tecnológicas y humanas necesarias para mejorar y optimizar los indicadores de producción de hidrocarburos,
-         tanto tangibles como intangibles. Nuestro principal objetivo es brindar apoyo y asistencia a las áreas de operaciones, ingeniería de producción y sala de control que lo necesiten.
-         Para lograr esto, estableceremos una filosofía de operación para los pozos Convencionales y No Convencionales, centrándonos especialmente en maximizar las capacidades que nos brindan las herramientas de tele supervisión y optimización en tiempo real, incluso de manera remota desde nuestro sistema. Esto incluirá la integración del Centro de Control (CC) y la creación de entornos colaborativos.
-
-        Además, estableceremos criterios de diagnóstico, operación y optimización específicos para pozos Surgentes y aquellos con Sistema de Extracción Artificial. 
-        Estamos comprometidos a utilizar todas las tecnologías y conocimientos disponibles para garantizar el mejor rendimiento en la producción de hidrocarburos, 
-        cumpliendo siempre con los más altos estándares de seguridad, salud y cuidado del medio ambiente.
-
-    </p>
+    
+    </div>
 </div>
 
 <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8">
     <div>
-        <div class="flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 stroke-gray-400">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-            </svg>
-            <h2 class="ml-3 text-xl font-semibold text-gray-900">
-                <a href="https://laravel.com/docs">Ámbito de aplicación</a>
-            </h2>
-        </div>
+        <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+              <img src="img/06/fondo3.jpeg" alt="Desarrollo de software a medida" class="h-full w-full object-cover object-center">
+            </div>
 
         <p class="mt-4 text-gray-500 text-sm leading-relaxed">
             El Ámbito de Aplicación comprende La totalidad de Cuenca Neuquina con la posibilidad de expansión a cualquier ámbito de 

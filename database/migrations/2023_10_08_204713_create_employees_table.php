@@ -11,10 +11,33 @@ return new class extends Migration
      */
     public function up(): void
     {
+        
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('lastName');
+            $table->string('employeeId')->unique();
+            $table->unsignedBigInteger('user_id')->nullable();
+                $table->foreign('user_id')
+                    ->references('id')
+                    ->on('users')
+                    ->onUpdate('cascade');
+            $table->string('email')->unique()->nullable();
+            $table->string('bank_account')->nullable();
+            $table->string('position')->nullable();
+            $table->string('health_registration')->nullable();
+            $table->string('sex');
+            $table->integer('weekly_hours')->nullable();
+            $table->date('birth')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('address')->nullable();
+            $table->string('city')->nullable();
+            $table->string('state')->nullable();
+            $table->string('country')->nullable();
+            $table->string('status','100')->default('activo');
             $table->timestamps();
         });
+        
     }
 
     /**
