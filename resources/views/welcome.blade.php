@@ -4,12 +4,15 @@
                 
         {{-- <img class="rounded-md w-full" src="{{asset('img/trabajadores01.jpg')}}" alt=""> --}}
         <div class="relative">
-            <img class="w-screen shadow-lg pointer-events-none" src="{{asset('img/06/fondoTeam.jpg')}}" alt="">
-            <div class="lg:absolute relative cursor-pointer lg:top-40 lg:left-20 px-4 py-3 lg:w-fit  rounded-lg">
-                <h1 class="text-orange-500 font-bold text-5xl select-none  hover:text-orange-300">NQN PETROL
+            <img class="w-screen shadow-lg pointer-events-none" src="{{asset('img/01/oilwell.jpg')}}" alt="">
+            <div class="lg:absolute relative cursor-pointer lg:top-40 lg:left-20 px-4 py-3 lg:w-80  rounded-lg">
+                <h1 class="text-gray-100 font-mono font-bold text-8xl select-none  hover:text-orange-300">NQN PETROL
                 </h1>
                 <br>
-                <p class="text-gray-400 lg:text-white text-xl shadow-2xl select-none">Técnología de optimización
+                <p class="text-gray-400 lg:text-white text-xl shadow-2xl select-none">Desarrollamos soluciones
+                    para los sectores de upstream, midstream y downstream de petróleo y gas natural.
+                    Tecnología de opstimización de pozos
+                </p>
 
             </div>
             <div class="border-2">
@@ -22,6 +25,12 @@
     <div class="container bg-gray-200 mx-auto w-full h-full">
         <div class="relative wrap overflow-hidden h-full">
            
+            <div class="relative mb-8 grid grid-cols-1 md:grid-cols-2 bg-white w-full py-10 px-4">
+
+                
+
+            </div>
+
             <!-- First item -->
            
       
@@ -30,13 +39,17 @@
                 
                 <div class="order-1 group flex flex-row items-center justify-end">
                     
-                    <div class="order-1 bg-gray-400 cursor-pointer rounded-lg shadow-xl w-96 px-4 py-2">
-                        <h3 class="mb-3 select-none font-bold text-pink-700 text-xl">Excellence</h3>
+                    <div class="order-2 bg-gray-400 cursor-pointer rounded-lg shadow-xl w-96 px-4 py-2">
+                        <h3 class="mb-3 select-none font-bold text-pink-700 text-xl">Misión:</h3>
                         <p class="text-sm select-none leading-snug tracking-wide text-gray-900 text-opacity-100">
                         
-                            Our business requires focused innovation and evaluation of new opportunities. 
-                            We balance the application of new technologies and testing of new concepts with prudent risk management
-                            and thorough data analysis.    
+                           Brindar soluciones agiles en producción, optimización y seguridad para la industrial del Oil & gas , en los sectores de upstream, midstream y dowstream.
+                              
+                        </p>
+                        <h3 class="mb-3 select-none font-bold text-pink-700 text-xl">Visión:</h3>
+                        <p class="text-sm select-none leading-snug tracking-wide text-gray-900 text-opacity-100">
+                            Utilizar las mejores herramientas, la tecnología adecuada y el capital humano calificado para crear soluciones de alto valor estratégico, económico y sustentable.
+                            Valores; Respetar y cuidar el medio ambiente, la seguridad y la sociedad en su conjunto con vista a un mejor habitad donde desarrollarnos
                         </p>
                     </div>
                     <div class="hidden md:flex w-20 lg:w-20 order-2 group-hover:w-10 justify-end duration-1000 border-2 border-gray-400">
@@ -48,8 +61,8 @@
                   
                     
                 </div>
-                <div class="flex order-2 items-center rounded-lg w-full justify-start select-none">
-                    <img class="m-2 pointer-events-none rounded-lg order-last" src="{{asset('img/06/excellence2.jpg')}}" alt="">
+                <div class="flex order-1 items-center rounded-lg w-full justify-start select-none">
+                    <img class="pointer-events-none rounded-lg order-last" src="{{asset('img/01/mision02.jpg')}}" alt="">
                 </div>
             </div>
 
@@ -57,7 +70,7 @@
 
             <div class="relative h-80 mb-8 grid grid-cols-1 gap-0 md:grid-cols-2 justify- w-full">
                 <div class="order-2 md:order-1 flex rounded-lg justify-center md:justify-end select-none">
-                    <img class="m-2 pointer-events-none rounded-lg order-last" src="{{asset('img/06/integrity.jpg')}}" alt="">
+                    <img class="m-2 pointer-events-none rounded-lg order-last" src="{{asset('img/01/echometer02.jpg')}}" alt="">
                 </div>
                 <div class="order-1 md:order-2 group flex flex-row items-center justify-start">
                     <div class="hidden md:flex order-1 w-1/5 justify-end">

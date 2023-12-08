@@ -11,6 +11,10 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
+        {{-- Captcha --}}
+        {{-- {!! NoCaptcha::renderJs() !!} --}}
+        <script src="https://www.google.com/recaptcha/api.js?render=6LdDCyspAAAAANoSf36rTdU26kAG0ITRJ3_zTvWQ"></script>
+
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 

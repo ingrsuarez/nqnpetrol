@@ -16,6 +16,11 @@
 
         <!-- Styles -->
         @livewireStyles
+
+        {{-- Captcha --}}
+        {{-- {!! NoCaptcha::renderJs() !!} --}}
+        <script src="https://www.google.com/recaptcha/api.js?render=6LdDCyspAAAAANoSf36rTdU26kAG0ITRJ3_zTvWQ"></script>
+        
     </head>
     <body class="font-sans antialiased bg-gray-300">
         <x-banner />
