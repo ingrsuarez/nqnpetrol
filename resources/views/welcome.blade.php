@@ -11,7 +11,7 @@
                 <br>
                 <p class="text-gray-400 lg:text-white text-xl shadow-2xl select-none">Desarrollamos soluciones
                     para los sectores de upstream, midstream y downstream de petróleo y gas natural.
-                    Tecnología de opstimización de pozos
+                    Tecnología de optimización de pozos
                 </p>
 
             </div>
