@@ -111,7 +111,7 @@
                 <div class="order-2 md:order-1 flex rounded-lg justify-center md:justify-center select-none">
                     <img class="pointer-events-none rounded-lg order-last object-contain" src="{{asset('img/01/echometer02.jpg')}}" alt="">
                 </div>
-                <div class="order-1 md:order-2 group flex flex-row items-center justify-start">
+                <div class="order-1 md:order-2 group flex flex-row items-center justify-center">
                     <div class="section order-2 cursor-pointer rounded-lg w-3/4 px-4 py-2">
                         <h3 class="my-4 select-none font-bold text-xl">Servicio de dinamometría</h3>
                         <p class="select-none leading-snug tracking-wide text-opacity-100">
