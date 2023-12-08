@@ -52,34 +52,28 @@
            
       
             
-            <div class="relative mb-8 grid grid-cols-1 md:grid-cols-2 bg-white w-full py-10 px-4">
+            <div class="relative mb-8 grid grid-cols-1 md:grid-cols-2 bg-sky-800 text-white  w-full">
                 
-                <div class="order-1 group flex flex-row items-center justify-end">
+                <div class="order-1 group flex flex-row items-center justify-center">
                     
-                    <div class="order-2 bg-gray-400 cursor-pointer rounded-lg shadow-xl w-96 px-4 py-2">
-                        <h3 class="mb-3 select-none font-bold text-pink-700 text-xl">Misión:</h3>
-                        <p class="text-sm select-none leading-snug tracking-wide text-gray-900 text-opacity-100">
+                    <div class="order-2 cursor-pointer rounded-lg w-3/4 px-4 py-2">
+                        <h3 class="mb-3 select-none font-bold text-xl">Misión:</h3>
+                        <p class="select-none leading-snug tracking-wide text-opacity-100">
                         
                            Brindar soluciones agiles en producción, optimización y seguridad para la industrial del Oil & gas , en los sectores de upstream, midstream y dowstream.
                               
                         </p>
-                        <h3 class="mb-3 select-none font-bold text-pink-700 text-xl">Visión:</h3>
-                        <p class="text-sm select-none leading-snug tracking-wide text-gray-900 text-opacity-100">
+                        <h3 class="my-4 select-none font-bold text-xl">Visión:</h3>
+                        <p class="select-none leading-snug tracking-wide text-opacity-100">
                             Utilizar las mejores herramientas, la tecnología adecuada y el capital humano calificado para crear soluciones de alto valor estratégico, económico y sustentable.
                             Valores; Respetar y cuidar el medio ambiente, la seguridad y la sociedad en su conjunto con vista a un mejor habitad donde desarrollarnos
                         </p>
                     </div>
-                    <div class="hidden md:flex w-20 lg:w-20 order-2 group-hover:w-10 justify-end duration-1000 border-2 border-gray-400">
-                        {{--Line--}}  
-                    </div>
-                    <div class="hidden md:flex order-3 w-1/5 justify-start">
-                        <img class="h-20 -mr-2 pointer-events-none" src="{{asset('img/06/rocket.png')}}" alt="">
-                    </div>
                   
                     
                 </div>
-                <div class="flex order-1 items-center rounded-lg w-full justify-start select-none">
-                    <img class="pointer-events-none rounded-lg order-last" src="{{asset('img/01/mision02.jpg')}}" alt="">
+                <div class="flex order-1 items-center rounded-lg h-full justify-start select-none">
+                    <img class="pointer-events-none rounded-lg order-last h-full" src="{{asset('img/01/mision02.jpg')}}" alt="">
                 </div>
             </div>
 
