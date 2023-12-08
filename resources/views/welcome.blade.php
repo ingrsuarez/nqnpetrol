@@ -5,7 +5,7 @@
         {{-- <img class="rounded-md w-full" src="{{asset('img/trabajadores01.jpg')}}" alt=""> --}}
         <div class="relative">
             <img class="w-screen shadow-lg pointer-events-none" src="{{asset('img/01/oilwell.jpg')}}" alt="">
-            <div class="hidden md:block lg:absolute relative cursor-pointer lg:top-10 lg:right-20 px-4 py-3 lg:w-1/2 bg-slate-600 bg-opacity-50 rounded-lg">
+            <div class="hidden lg:absolute relative cursor-pointer lg:top-10 lg:right-20 px-4 py-3 lg:w-1/2 bg-slate-600 bg-opacity-50 rounded-lg">
                 <h1 class="text-gray-100 font-display font-medium tracking-tight text-8xl select-none  hover:text-orange-300">NQN PETROL
                 </h1>
                 <br>
@@ -57,7 +57,7 @@
                 <div class="order-1 group flex flex-row items-center justify-center">
                    
                     <div class="section order-2 cursor-pointer rounded-lg w-3/4 px-4 py-2">
-                        <h3 class="mb-3 select-none font-bold text-xl">Misión:</h3>
+                        <h3 class="my-3 select-none font-bold text-xl">Misión:</h3>
                         <p class="select-none leading-snug tracking-wide text-opacity-100">
                         
                             Brindar soluciones agiles en producción, optimización y seguridad para la industrial del Oil & gas , en los sectores de upstream, midstream y dowstream.
@@ -79,7 +79,7 @@
             <!-- Second item -->
             <div class="section">
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 pt-20 text-center lg:pt-32">
-                    <h1 class="mx-auto max-w-4xl font-display text-lg sm:text-xl md:text-3xl lg:text-5xl font-medium tracking-tight text-slate-900 sm:text-3xl">
+                    <h1 class="mx-auto max-w-4xl font-display text-lg sm:text-xl md:text-3xl lg:text-5xl font-medium tracking-tight text-slate-900">
                         Somos un 
                         <!-- --> 
                         <span class="relative whitespace-nowrap text-blue-600">
@@ -129,6 +129,11 @@
                         <p class="select-none leading-snug tracking-wide text-opacity-100">
                         
                         Gestión logística para el transporte de cargas pesadas
+                        </p>
+
+                        <h3 class="my-4 select-none font-bold text-xl">Máquinas pesadas, tractores y utilitarios</h3>
+                        <p class="select-none leading-snug tracking-wide text-opacity-100">
+                        Alquiler de todo tipo de maquinaria y equipos para distintas industrias
                         </p>
                     </div>
                     
