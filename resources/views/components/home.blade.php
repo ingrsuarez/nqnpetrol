@@ -16,7 +16,7 @@
 
         {{-- Captcha --}}
         {{-- {!! NoCaptcha::renderJs() !!} --}}
-        <script src="https://www.google.com/recaptcha/api.js?render=6Lc2I8woAAAAAI4fDjYwAr9qD4tnHjLRm1NCrfBV"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=6LdDCyspAAAAANoSf36rTdU26kAG0ITRJ3_zTvWQ"></script>
 
         <script>
             document.addEventListener('submit',function(e){
