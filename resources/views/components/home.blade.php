@@ -65,34 +65,34 @@
                                 <a
                                 class="relative h-20 inline-flex items-center text-gray-300 hover:text-white"
                                 href="#"
-                                >Home</a>
+                                >Inicio</a>
                             </li>
                     
                             <li class="w-full flex justify-center ">
                                 <a
                                 class="relative h-20 inline-flex items-center text-gray-300 hover:text-white"
                                 href="#"
-                                >Services</a>
+                                >Servicios</a>
                             </li>
                     
                             <li class="w-full flex justify-center ">
                                 <a
                                 class="transition relative h-20 inline-flex items-center text-gray-300 hover:text-white"
                                 href="#"
-                                >Team</a>
+                                >Equipo</a>
                             </li>     
                             <li class="w-full flex justify-center ">
                                 <a
                                 class="transition relative h-20 inline-flex items-center text-gray-300 hover:text-white"
                                 href="#" target="_blank"
-                                >News</a>
+                                >Novedades</a>
                             </li>
                     
                             <li class="w-full flex justify-center ">
                                 <a
                                 class="transition relative h-20 inline-flex items-center text-gray-300 hover:text-white"
                                 href="#footer"
-                                >Contact</a>
+                                >Contacto</a>
                             </li>
                             
                             <li
