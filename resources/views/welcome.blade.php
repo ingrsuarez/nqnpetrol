@@ -5,7 +5,7 @@
         {{-- <img class="rounded-md w-full" src="{{asset('img/trabajadores01.jpg')}}" alt=""> --}}
         <div class="relative">
             <img class="w-screen shadow-lg pointer-events-none" src="{{asset('img/01/oilwell.jpg')}}" alt="">
-            <div class="hidden md:block lg:absolute relative cursor-pointer lg:top-40 lg:left-20 px-4 py-3 lg:w-1/2 bg-slate-600 bg-opacity-50 rounded-lg">
+            <div class="hidden md:block lg:absolute relative cursor-pointer lg:top-10 lg:right-20 px-4 py-3 lg:w-1/2 bg-slate-600 bg-opacity-50 rounded-lg">
                 <h1 class="text-gray-100 font-display font-medium tracking-tight text-8xl select-none  hover:text-orange-300">NQN PETROL
                 </h1>
                 <br>
