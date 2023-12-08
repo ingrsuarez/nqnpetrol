@@ -4,7 +4,7 @@
 </svg> --}}
 
 <div class="shrink-0 flex items-center">
-  <a href="https://hio.dev">
-      <img src="{{asset('img/brand/nqnlogo.jpg')}}" class="w-20 object-cover object-center opacity-60 rounded">
+  <a href="https://nqnpetrol.admesys.com">
+      <img src="{{asset('img/brand/logo-white.png')}}" class="w-20 object-cover object-center opacity-60 rounded">
   </a>
 </div>

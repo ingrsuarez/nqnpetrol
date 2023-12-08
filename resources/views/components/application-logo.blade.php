@@ -6,7 +6,7 @@
 
 {{-- <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64"> --}}
 <div class="shrink-0 flex items-center">
-  <a href="https://hio.dev">
-      <img src="{{asset('img/brand/nqnlogo.jpg')}}" class="w-36 object-cover object-center">
+  <a href="https://nqnpetrol.admesys.com">
+      <img src="{{asset('img/brand/logo-white.png')}}" class="w-36 object-cover object-center">
   </a>
 </div>

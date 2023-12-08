@@ -3,6 +3,7 @@
     <h1 class="text-3xl mt-4 py-2 px-4 bg-orange-100 top-0 absolute shadow-md rounded">Organigrama</h1>
     <div class="container mx-auto text-center pt-24">
         <div class="items-center justify-center flex">
+            @isset($job)
             <div class="text-center">
                 <div class="flex flex-col justify-center items-center">
                     <div class="w-16">
@@ -324,7 +325,9 @@
                     </ul> --}}
                     {{-- @endif
                 @endforeach --}}
-            </div>
+            </div>    
+            @endisset
+            
         </div>
     </div>
     
