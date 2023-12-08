@@ -18,12 +18,18 @@ export default {
             },
             keyframes: {
                 wiggle: {
-                  '0%, 100%': { transform: 'rotate(-3deg)' },
-                  '50%': { transform: 'rotate(3deg)' },
+                  '0%, 100%': { transform: 'rotate(0deg)' },
+                  '50%': { transform: 'rotate(180deg)' },
+                },
+                appear: {
+                    '0%' : { opacity:'0' },
+                    '50%': { opacity:'0.5' },
+                    '100%': {opacity:'1'}
                 }
             },
             animation: {
-                wiggle: 'wiggle 1s ease-in-out infinite',
+                wiggle: 'wiggle 1s ease-in-out 1',
+                appear: 'appear 2s ease-in-out 1',
             },
         },
     },
