@@ -4,12 +4,12 @@
                 
         {{-- <img class="rounded-md w-full" src="{{asset('img/trabajadores01.jpg')}}" alt=""> --}}
         <div class="relative">
-            <img class="w-screen shadow-lg pointer-events-none" src="{{asset('img/01/oilwell.jpg')}}" alt="">
-            <div class="hidden lg:block lg:absolute relative cursor-pointer lg:top-10 lg:right-20 px-4 py-3 lg:w-1/2 bg-slate-600 bg-opacity-50 rounded-lg">
-                <h1 class="text-gray-100 font-display font-medium tracking-tight text-8xl select-none  hover:text-orange-300">NQN PETROL
+            <img class="w-screen pointer-events-none" src="{{asset('img/01/oilwell.jpg')}}" alt="">
+            <div class="hidden lg:block lg:absolute relative cursor-pointer lg:top-10 lg:right-20 px-3 py-6 lg:w-1/2 bg-slate-400 bg-opacity-50 shadow-lg rounded-lg">
+                <h1 class="text-gray-100 font-display font-medium tracking-tight text-8xl select-none drop-shadow-lg hover:drop-shadow-xl">NQN PETROL
                 </h1>
                 <br>
-                <p class="text-gray-400 lg:text-white text-xl shadow-2xl select-none">Desarrollamos soluciones
+                <p class="text-gray-400 lg:text-white text-xl drop-shadow-lg select-none">Desarrollamos soluciones
                     para los sectores de upstream, midstream y downstream de petróleo y gas natural.
                     Tecnología de optimización de pozos
                 </p>
@@ -27,7 +27,7 @@
            
             <div class="section">
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 pt-20 text-center lg:pt-32">
-                    <h1 class="mx-auto max-w-4xl font-display text-lg sm:text-xl md:text-3xl lg:text-5xl font-medium tracking-tight text-slate-900">
+                    <h1 class="mx-auto max-w-4xl font-display text-lg sm:text-xl md:text-3xl lg:text-5xl font-medium drop-shadow-lg tracking-tight text-slate-900">
                         Nuestros servicios se basan en las 
                         <!-- --> 
                         <span class="relative whitespace-nowrap text-blue-600">
@@ -57,13 +57,13 @@
                 <div class="order-1 group flex flex-row items-center justify-center">
                    
                     <div class="section order-2 cursor-pointer rounded-lg w-3/4 px-4 py-2">
-                        <h3 class="my-3 select-none font-bold text-xl">Misión:</h3>
+                        <h3 class="my-3 select-none font-bold text-xl drop-shadow-lg">Misión:</h3>
                         <p class="select-none leading-snug tracking-wide text-opacity-100">
                         
                             Brindar soluciones agiles en producción, optimización y seguridad para la industrial del Oil & gas , en los sectores de upstream, midstream y dowstream.
                                 
                         </p>
-                        <h3 class="my-4 select-none font-bold text-xl">Visión:</h3>
+                        <h3 class="my-4 select-none font-bold text-xl drop-shadow-lg">Visión:</h3>
                         <p class="select-none leading-snug tracking-wide text-opacity-100">
                             Utilizar las mejores herramientas, la tecnología adecuada y el capital humano calificado para crear soluciones de alto valor estratégico, económico y sustentable.
                             Valores; Respetar y cuidar el medio ambiente, la seguridad y la sociedad en su conjunto con vista a un mejor habitad donde desarrollarnos
@@ -79,7 +79,7 @@
             <!-- Second item -->
             <div class="section">
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 pt-20 text-center lg:pt-32">
-                    <h1 class="mx-auto max-w-4xl font-display text-lg sm:text-xl md:text-3xl lg:text-5xl font-medium tracking-tight text-slate-900">
+                    <h1 class="mx-auto max-w-4xl font-display text-lg sm:text-xl md:text-3xl lg:text-5xl drop-shadow-lg font-medium tracking-tight text-slate-900">
                         Somos un 
                         <!-- --> 
                         <span class="relative whitespace-nowrap text-blue-600">
