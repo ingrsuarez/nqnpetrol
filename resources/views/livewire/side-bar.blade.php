@@ -184,6 +184,89 @@
         </div>
     </li>
     
+    <li class="relative pt-4">
+        <button onclick="showMenu2(true)" class="focus:outline-none focus:text-indigo-400 text-left  text-white flex justify-between items-center w-full space-x-14 ">
+            <span class="px-6 text-[0.8rem] font-bold uppercase text-gray-300 dark:text-gray-400">
+            SISTEMA:</span>
+            <svg id="icon2" class="transform" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 15L12 9L6 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div id="menu2" class="flex justify-start  flex-col w-full md:w-auto">
+
+            <a class="text-gray-300 flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem]
+            data-[active=active]:bg-slate-50  data-[active=active]:text-inherit
+            hover:bg-slate-50 hover:text-inherit hover:outline-none
+            focus:bg-slate-50 focus:text-inherit focus:outline-none"
+            data-active="{{ Route::currentRouteName()=='role.new' ? 'active' : ''}}"
+            href="{{route('role.new')}}">
+                
+                <span
+                    class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        fill="none" 
+                        width="800px" 
+                        height="800px" 
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor">
+                        <path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                </span>
+                <span>Nuevo Rol </span>
+            </a>
+            <a class="text-gray-300 flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem]
+                data-[active=active]:bg-slate-50  data-[active=active]:text-inherit
+                hover:bg-slate-50 hover:text-inherit hover:outline-none
+                focus:bg-slate-50 focus:text-inherit focus:outline-none"
+                data-active="{{ Route::currentRouteName()=='permission.new' ? 'active' : ''}}"
+                href="{{route('permission.new')}}">
+                <span
+                class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            width="800px" 
+                            height="800px" 
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor">
+                    <path
+                        d="M16.5 6a3 3 0 00-3-3H6a3 3 0 00-3 3v7.5a3 3 0 003 3v-6A4.5 4.5 0 0110.5 6h6z" />
+                    <path
+                        d="M18 7.5a3 3 0 013 3V18a3 3 0 01-3 3h-7.5a3 3 0 01-3-3v-7.5a3 3 0 013-3H18z" />
+                    </svg>
+                </span>
+                <span>Permisos</span>
+            </a>
+        
+            <a class="text-gray-300 flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem]
+                data-[active=active]:bg-slate-50  data-[active=active]:text-inherit
+                hover:bg-slate-50 hover:text-inherit hover:outline-none
+                focus:bg-slate-50 focus:text-inherit focus:outline-none"
+                data-active="{{ Route::currentRouteName()=='user.index' ? 'active' : ''}}"
+                href="{{route('user.index')}}">
+            <span
+                class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-3.5 w-3.5">
+                <path
+                    fill-rule="evenodd"
+                    d="M8.25 6.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM15.75 9.75a3 3 0 116 0 3 3 0 01-6 0zM2.25 9.75a3 3 0 116 0 3 3 0 01-6 0zM6.31 15.117A6.745 6.745 0 0112 12a6.745 6.745 0 016.709 7.498.75.75 0 01-.372.568A12.696 12.696 0 0112 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 01-.372-.568 6.787 6.787 0 011.019-4.38z"
+                    clip-rule="evenodd" />
+                <path
+                    d="M5.082 14.254a8.287 8.287 0 00-1.308 5.135 9.687 9.687 0 01-1.764-.44l-.115-.04a.563.563 0 01-.373-.487l-.01-.121a3.75 3.75 0 013.57-4.047zM20.226 19.389a8.287 8.287 0 00-1.308-5.135 3.75 3.75 0 013.57 4.047l-.01.121a.563.563 0 01-.373.486l-.115.04c-.567.2-1.156.349-1.764.441z" />
+                </svg>
+            </span>
+            <span>Team</span>
+            </a>
+        </div>
+
+    </li>
     {{-- <li class="relative">
         <a
         class="flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
@@ -205,7 +288,7 @@
         </a>
     </li> --}}
 
-    @can('administrator')
+    @can('administrador')
         <li class="relative pt-4">
             <span
             class="px-6 py-4 text-[0.8rem] font-bold uppercase text-gray-600 dark:text-gray-400"
