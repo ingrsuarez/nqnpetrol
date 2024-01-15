@@ -138,7 +138,7 @@ Route::middleware([
     //ROLES
 
     Route::get('role/new',[App\Http\Controllers\RoleController::class, 'new'])
-        ->middleware('can:role.new')
+        // ->middleware('can:role.new')
         ->name('role.new');
 
     Route::post('role/store',[App\Http\Controllers\RoleController::class, 'store'])
