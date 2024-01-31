@@ -1,33 +1,6 @@
 <div class="p-6 lg:p-8 bg-white border-b border-gray-200">
     <x-application-logo class="block h-40" />
-    <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8">
-        
-        <div class="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-            
-            <img src="img/06/fondo3.jpeg" alt="Desarrollo de software a medida" class="h-full w-full object-cover object-center">
-        </div>
-        <h1 class="mt-8 text-2xl font-medium text-gray-900">
-            Mission:
-        </h1>
-        <p class="mt-6 text-gray-500 leading-relaxed">
-            Our mission is provide technical tools necesary to improve and optimize indicators
     
-            Our mission is to provide the technical, technological and human tools necessary to improve and optimize the indicators.
-            of hydrocarbon production, both tangible and intangible. Our main objective is to provide support and assistance to the areas of operations,
-            production engineering and control room that need it.
-            To achieve this, we will establish an operating philosophy for Conventional and Unconventional wells, focusing especially 
-            on maximizing the capabilities provided by real-time remote monitoring and optimization tools, even remotely from our system. 
-            This includes the integration of the Control Center (CC) and the creation of collaborative environments.
-    
-            Además, estableceremos criterios de diagnóstico, operación y optimización específicos para pozos Surgentes y aquellos con Sistema de Extracción Artificial. 
-            Estamos comprometidos a utilizar todas las tecnologías y conocimientos disponibles para garantizar el mejor rendimiento en la producción de hidrocarburos, 
-            cumpliendo siempre con los más altos estándares de seguridad, salud y cuidado del medio ambiente.
-    
-        </p>
-
-
-    
-    </div>
 </div>
 
 <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8">

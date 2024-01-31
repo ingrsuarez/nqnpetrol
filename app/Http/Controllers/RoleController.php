@@ -31,4 +31,10 @@ class RoleController extends Controller
         $role->givePermissionTo($permission->name);
         return redirect()->action([RoleController::class, 'edit'],['role'=>$role->id]);
     }
+
+    public function detachPermission(Role $role, Permission $permission)
+    {
+        $role->revokePermissionTo($permission->name);
+        return redirect()->action([RoleController::class, 'edit'],['role'=>$role->id]);
+    }
 }

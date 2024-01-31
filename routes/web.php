@@ -27,25 +27,41 @@ Route::middleware([
             return view('dashboard');
         })->name('dashboard');
 
-        //USERS
+    //CLIENTS
+    Route::get('client/new',[App\Http\Controllers\ClientController::class, 'new'])
+        ->middleware('can:client.new')
+        ->name('client.new');  
 
-
-
-        //EMPLOYEES
+    Route::post('client/store',[App\Http\Controllers\ClientController::class, 'store'])
+        ->middleware('can:client.new')
+        ->name('client.store');
+    
+    Route::get('client/edit/{client}',[App\Http\Controllers\ClientController::class, 'edit'])
+        ->middleware('can:client.edit')
+        ->name('client.edit');
+    
+    Route::get('wells/dashboard',[App\Http\Controllers\WellController::class, 'dashboard'])
+        ->middleware('can:well.dashboard')
+        ->name('well.dashboard');
+    Route::post('wells/store',[App\Http\Controllers\WellController::class, 'store'])
+        ->middleware('can:well.dashboard')
+        ->name('well.store');
+    
+    //EMPLOYEES
     Route::get('employee/new',[App\Http\Controllers\EmployeeController::class, 'new'])
-        // ->middleware('can:employee.new')
+        ->middleware('can:employee.new')
         ->name('employee.new');
 
     Route::post('employee/store',[App\Http\Controllers\EmployeeController::class, 'store'])
-        // ->middleware('can:employee.store')
+        ->middleware('can:employee.store')
         ->name('employee.store');
 
     Route::get('employee/edit',[App\Http\Controllers\EmployeeController::class, 'edit'])
-        // ->middleware('can:employee.edit')
+        ->middleware('can:employee.edit')
         ->name('employee.edit');
 
     Route::post('employee/save',[App\Http\Controllers\EmployeeController::class, 'save'])
-        // ->middleware('can:employee.save')
+        ->middleware('can:employee.save')
         ->name('employee.save');
 
     //JOBS
