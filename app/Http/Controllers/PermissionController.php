@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 
+
 class PermissionController extends Controller
 {
     public function new() 
@@ -16,8 +17,10 @@ class PermissionController extends Controller
 
     public function store(Request $request)
     {
+        $role = Role::where('name','administrador')->first();
         
         $permission = Permission::create(['guard_name' => $request->guard_name, 'name' => $request->name]);
+        $role->givePermissionTo($request->name);
         return redirect()->action([PermissionController::class, 'new']);
     }
 

@@ -263,7 +263,7 @@
         </div>
     </li>
     
-    @can('role.new')
+    @can('system')
         <li class="relative pt-4">
             <button onclick="showMenu2(true)" class="focus:outline-none focus:text-indigo-400 text-left  text-white flex justify-between items-center w-full space-x-14 ">
                 <span class="px-6 text-[0.8rem] font-bold uppercase text-gray-300 dark:text-gray-400">
@@ -370,7 +370,7 @@
     </li> --}}
 
 
-        <li class="relative pt-4">
+        {{-- <li class="relative pt-4">
             <span
             class="px-6 py-4 text-[0.8rem] font-bold uppercase text-gray-600 dark:text-gray-400"
             >Manage</span
@@ -391,7 +391,7 @@
             </span>
             <span>Projects</span>
             </a>
-        </li>
+        </li> --}}
 
         {{-- <li class="relative">
             <a

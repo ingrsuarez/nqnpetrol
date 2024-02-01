@@ -43,6 +43,9 @@ Route::middleware([
     Route::get('wells/dashboard',[App\Http\Controllers\WellController::class, 'dashboard'])
         ->middleware('can:well.dashboard')
         ->name('well.dashboard');
+    Route::get('wells/new',[App\Http\Controllers\WellController::class, 'new'])
+        ->middleware('can:well.new')
+        ->name('well.new');
     Route::post('wells/store',[App\Http\Controllers\WellController::class, 'store'])
         ->middleware('can:well.dashboard')
         ->name('well.store');

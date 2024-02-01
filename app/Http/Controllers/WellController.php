@@ -16,6 +16,13 @@ class WellController extends Controller
         return view('well.dashboard',compact('clients','wells'));
     }
 
+    public function new()
+    {   
+        $wells = Well::all();
+        $clients = Client::all();
+        return view('well.new',compact('clients','wells'));
+    }
+
     public function store(Request $request)
     {
         $well = new Well;

@@ -6,7 +6,7 @@
 </a> --}}
 
 <div class="shrink-0 flex items-center">
-    <a href="https://hio.dev">
+    <a href="https://nqnpetrol.admesys.com">
         <img src="img/brand/nqnlogo.jpg" class="w-60 object-cover object-center">
     </a>
 </div>
