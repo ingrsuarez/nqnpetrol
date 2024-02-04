@@ -14,7 +14,7 @@
                                 <img class="block rounded-full m-auto shadow-md" alt="Leo Six"
                                     src="https://randomuser.me/api/portraits/men/83.jpg" />
                             </div> --}}
-                            <div class="text-gray-600">
+                            <div class="text-gray-600  flex flex-col justify-center items-center">
                                 <form action="{{route('job.view')}}">
                                     <input type="hidden" name="job" value="{{$child->id}}">
                                     <button class="text-xl font-bold cursor-pointer select-none">{{ucwords($child->name)}}</button>
@@ -44,7 +44,7 @@
                                 <img class="block rounded-full m-auto shadow-md" alt="Leo Six"
                                     src="https://randomuser.me/api/portraits/men/83.jpg" />
                             </div> --}}
-                            <div class="text-gray-600">
+                            <div class="text-gray-600  flex flex-col justify-center items-center">
                                 <form action="{{route('job.view')}}">
                                     <input type="hidden" name="job" value="{{$child->id}}">
                                     <button class="text-xl font-bold cursor-pointer select-none">{{ucwords($child->name)}}</button>
@@ -69,12 +69,12 @@
                     <div class="-mt-6 border-l-2 absolute h-6 border-gray-400 top-0"></div>
                     <div class="text-center">
                         <div class="flex flex-col justify-center items-center">
-                            <div class="text-gray-600">
+                            <div class="text-gray-600 flex flex-col justify-center items-center">
                                 <form action="{{route('job.view')}}">
                                     <input type="hidden" name="job" value="{{$child->id}}">
                                     <button class="text-xl font-bold cursor-pointer select-none">{{ucwords($child->name)}}</button>
                                 </form>
-                                <div class="border-2">
+                                <div class="border-2  w-max">
                                     @foreach($child->employees as $employee)
                                     <p>{{ucwords($employee->name." ".$employee->lastName)}}</p>    
                                     {{-- <div class="w-16">
@@ -98,14 +98,13 @@
             <div class="relative flex justify-center">
                 <div class="-mt-6 border-l-2 absolute h-6 border-gray-400 top-0"></div>
                 <div class="text-center">
-                    <div class="flex flex-col justify-center items-center">
-                        
-                        <div class="text-gray-600">
+                    <div class="flex flex-col justify-center items-center ">  
+                        <div class="text-gray-600  flex flex-col justify-center items-center">
                             <form action="{{route('job.view')}}">
                                 <input type="hidden" name="job" value="{{$child->id}}">
                                 <button class="text-xl font-bold cursor-pointer select-none">{{ucwords($child->name)}}</button>
                             </form>
-                            <div class="border-2">
+                            <div class="border-2 w-max">
                                 @foreach($child->employees as $employee)
                                     {{-- <div class="w-16">
                                         <img class="block rounded-full m-auto shadow-md" alt="Leo Six"
