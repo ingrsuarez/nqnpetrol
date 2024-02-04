@@ -49,7 +49,7 @@
                                     <input type="hidden" name="job" value="{{$child->id}}">
                                     <button class="text-xl font-bold cursor-pointer select-none">{{ucwords($child->name)}}</button>
                                 </form>
-                                <div class="border-2">
+                                <div class="border-2  w-max">
                                     @foreach($child->employees as $employee)
                                         <p>{{ucwords($employee->name." ".$employee->lastName)}}</p>
                                     @endforeach
