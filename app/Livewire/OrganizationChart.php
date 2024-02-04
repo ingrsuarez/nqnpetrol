@@ -10,15 +10,17 @@ class OrganizationChart extends Component
 {
     public $employees;
     public $job;
+    public $responsibilities;
 
-    public function mount($employees)
+    public function mount($job)
     {
         $this->employees = Employee::all();
+        
         
     }
 
     public function render()
-    {
+    {   
         return view('livewire.organization-chart');
     }
 }
