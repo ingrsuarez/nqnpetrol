@@ -1,6 +1,6 @@
 
 <div class="flex flex-col justify-center items-center">
-    <h1 class="text-3xl mt-4 py-2 px-4 bg-orange-100 top-0 absolute shadow-md rounded">Organigrama</h1>
+    <h1 class="text-3xl mt-4 py-2 px-4 bg-orange-100 top-0 absolute shadow-md rounded"><a href="{{route('job.chart')}}"> Organigrama</a></h1>
     <div class="container mx-auto text-center pt-24">
         <div class="items-center justify-center flex">
             @isset($job)
@@ -11,7 +11,10 @@
                             {{-- src=""/> --}}
                     </div>
                     <div class="text-gray-600">
-                        <p class="text-xl font-bold">{{ucwords($job->name)}}</p>
+                        <form action="{{route('job.view')}}">
+                            <input type="hidden" name="job" value="{{$job->id}}">
+                            <button class="text-xl font-bold cursor-pointer select-none">{{ucwords($job->name)}}</button>
+                        </form>
                         <div class="border-2">
                         @foreach($job->employees as $employee)
                             

@@ -49,6 +49,9 @@ Route::middleware([
     Route::post('wells/store',[App\Http\Controllers\WellController::class, 'store'])
         ->middleware('can:well.dashboard')
         ->name('well.store');
+    Route::get('wells/list',[App\Http\Controllers\WellController::class, 'list'])
+        ->middleware('can:well.new')
+        ->name('well.new');
     
     //EMPLOYEES
     Route::get('employee/new',[App\Http\Controllers\EmployeeController::class, 'new'])
@@ -75,6 +78,10 @@ Route::middleware([
     Route::get('job/new',[App\Http\Controllers\JobController::class, 'new'])
         ->middleware('can:job.new')
         ->name('job.new');
+    
+    Route::get('job/view',[App\Http\Controllers\JobController::class, 'view'])
+        ->middleware('can:job.view')
+        ->name('job.view');
 
     Route::post('job/store',[App\Http\Controllers\JobController::class, 'store'])
         ->middleware('can:job.store')

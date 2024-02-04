@@ -11,7 +11,15 @@ class JobController extends Controller
 {
     public function chart()
     {
-        $job = Job::whereNotNull('parent_id')->first();
+        $job = Job::whereNull('parent_id')->first();
+        $employees = Employee::all();
+        return view('job.chart',compact('job','employees'));
+    }
+
+    public function view(Request $request)
+    {
+        // return $request;
+        $job = Job::where('id',$request->job)->first();
         $employees = Employee::all();
         return view('job.chart',compact('job','employees'));
     }

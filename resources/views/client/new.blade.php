@@ -1,9 +1,9 @@
 <x-app-layout>
     
-    <div class="flex flex-col justify-start">
-        <div class="rounded-t border border-neutral-200 bg-color-transparent" id="accordionExample">
+    <div class="flex flex-col bg-transparent justify-start">
+        <div class="bg-color-transparent" id="accordionExample">
             <div
-              class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+              class="rounded-t-[14px] bg-white">
               <h2 class="mb-0 " id="headingOne">
                 <button
                   class="bg-blue-500 group relative flex w-full items-center rounded-t-[15px] border-0  px-5 py-4 text-left text-base
@@ -17,14 +17,15 @@
                   Nuevo Cliente
                   <span
                     class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
-                    id="iconOne">
+                    >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="h-6 w-6">
+                      class="h-6 w-6"
+                      id="iconOne">
                       <path
                         stroke-linecap="round"
                         stroke-linejoin="round"
@@ -158,7 +159,7 @@
               class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
                 <h2 class="mb-0" id="headingTwo">
                 <button
-                class="bg-blue-500 group relative flex w-full items-center border-0  px-5 py-4 text-left text-base text-neutral-800
+                class="bg-blue-500 group relative flex w-full items-center border-0  px-5 py-4 text-left text-base
                 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none text-white"
                     type="button"
                     data-te-collapse-init
@@ -208,7 +209,7 @@
         
         accordion1.addEventListener("click",function(){
             collapse1.classList.toggle("hidden");
-            iconRotate1.classList.toggle("rotate-[-0deg]");
+            iconRotate1.classList.toggle("rotate-180");
         });
 
         var accordion2 = document.getElementById('headingTwo');
@@ -217,7 +218,7 @@
         
         accordion2.addEventListener("click",function(){
             collapse2.classList.toggle("hidden");
-            iconRotate2.classList.toggle("rotate-[-0deg]");
+            iconRotate2.classList.toggle("rotate-180");
         });
     </script>
 </x-app-layout>

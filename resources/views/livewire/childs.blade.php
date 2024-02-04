@@ -15,7 +15,10 @@
                                     src="https://randomuser.me/api/portraits/men/83.jpg" />
                             </div> --}}
                             <div class="text-gray-600">
-                                <p class="text-xl font-bold">{{ucwords($child->name)}}</p>
+                                <form action="{{route('job.view')}}">
+                                    <input type="hidden" name="job" value="{{$child->id}}">
+                                    <button class="text-xl font-bold cursor-pointer select-none">{{ucwords($child->name)}}</button>
+                                </form>
                                 <div class="border-2">
                                     @foreach($child->employees as $employee)
                                         <p>{{ucwords($employee->name." ".$employee->lastName)}}</p>
@@ -42,7 +45,10 @@
                                     src="https://randomuser.me/api/portraits/men/83.jpg" />
                             </div> --}}
                             <div class="text-gray-600">
-                                <p class="text-xl font-bold">{{ucwords($child->name)}}</p>
+                                <form action="{{route('job.view')}}">
+                                    <input type="hidden" name="job" value="{{$child->id}}">
+                                    <button class="text-xl font-bold cursor-pointer select-none">{{ucwords($child->name)}}</button>
+                                </form>
                                 <div class="border-2">
                                     @foreach($child->employees as $employee)
                                         <p>{{ucwords($employee->name." ".$employee->lastName)}}</p>
@@ -64,7 +70,10 @@
                     <div class="text-center">
                         <div class="flex flex-col justify-center items-center">
                             <div class="text-gray-600">
-                                <p class="text-xl font-bold">{{ucwords($child->name)}}</p>
+                                <form action="{{route('job.view')}}">
+                                    <input type="hidden" name="job" value="{{$child->id}}">
+                                    <button class="text-xl font-bold cursor-pointer select-none">{{ucwords($child->name)}}</button>
+                                </form>
                                 <div class="border-2">
                                     @foreach($child->employees as $employee)
                                     <p>{{ucwords($employee->name." ".$employee->lastName)}}</p>    
@@ -92,7 +101,10 @@
                     <div class="flex flex-col justify-center items-center">
                         
                         <div class="text-gray-600">
-                            <p class="text-xl font-bold">{{ucwords($child->name)}}</p>
+                            <form action="{{route('job.view')}}">
+                                <input type="hidden" name="job" value="{{$child->id}}">
+                                <button class="text-xl font-bold cursor-pointer select-none">{{ucwords($child->name)}}</button>
+                            </form>
                             <div class="border-2">
                                 @foreach($child->employees as $employee)
                                     {{-- <div class="w-16">
@@ -105,7 +117,7 @@
                             </div>
                         </div>
                     </div>
-                    @include('livewire.childs',['childs' => $child->childs])
+                    @include('livewire.childs',['childs' => $child->childs, 'job'=>$job])
                 </div>
             </div>
         </li>    
