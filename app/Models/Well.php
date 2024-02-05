@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Well extends Model
 {
     use HasFactory;
+
+    public function client()
+    {
+        return $this->belongsTo(Client::class);
+    }
 }

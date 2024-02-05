@@ -68,4 +68,18 @@ class WellController extends Controller
 
         return redirect()->back();
     }
+
+    public function edit(Well $well)
+    {   
+
+        $clients = Client::all();
+        return view('well.edit',compact('clients','well'));
+    }
+
+    public function list()
+    {   
+        $wells = Well::all();
+        $clients = Client::all();
+        return view('well.list',compact('clients','wells'));
+    }
 }

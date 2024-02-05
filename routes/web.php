@@ -46,12 +46,18 @@ Route::middleware([
     Route::get('wells/new',[App\Http\Controllers\WellController::class, 'new'])
         ->middleware('can:well.new')
         ->name('well.new');
+    Route::get('wells/edit/{well}',[App\Http\Controllers\WellController::class, 'edit'])
+        ->middleware('can:well.edit')
+        ->name('well.edit');
+    Route::post('wells/update',[App\Http\Controllers\WellController::class, 'update'])
+        ->middleware('can:well.edit')
+        ->name('well.update');
     Route::post('wells/store',[App\Http\Controllers\WellController::class, 'store'])
         ->middleware('can:well.dashboard')
         ->name('well.store');
     Route::get('wells/list',[App\Http\Controllers\WellController::class, 'list'])
         ->middleware('can:well.new')
-        ->name('well.new');
+        ->name('well.list');
     
     //EMPLOYEES
     Route::get('employee/new',[App\Http\Controllers\EmployeeController::class, 'new'])
