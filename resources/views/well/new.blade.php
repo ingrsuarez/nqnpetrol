@@ -239,7 +239,7 @@
                             </div>
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Diámetro de la barra pulida:</span>
-                                <input type="text" name="polish_rod" id="polish_rod" autocomplete="off" 
+                                <input type="text" name="rod_diameter" id="rod_diameter" autocomplete="off" 
                                 class="w-fit border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                                 <span class="text-gray-900 border-4">[in]</span>

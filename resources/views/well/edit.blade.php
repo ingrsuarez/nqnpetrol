@@ -87,6 +87,7 @@
                                 <input type="text" name="name" id="name" autocomplete="off" required autofocus
                                     class="w-full rounded-r-md border-0 text-gray-900 placeholder:text-gray-400 
                                     sm:text-sm focus:ring-2 focus:ring-indigo-600" value="{{$well->name}}">
+                                <input type="hidden" name="well_id" value="{{$well->id}}">
                             </div>
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Yacimiento:</span>
@@ -108,15 +109,15 @@
                             </div>
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Ubicación:</span>
-                                <input type="text" name="location" id="location" 
+                                <input type="text" name="location" id="location" value="{{$well->location}}"
                                 class="w-full rounded-r-md border-0 text-gray-900 shadow-sm  placeholder:text-gray-400 sm:text-sm 
-                                focus:ring-2 focus:ring-indigo-600">
+                                focus:ring-2 focus:ring-indigo-600" required>
                             </div>
 
 
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Batería:</span>
-                                <input type="text" name="battery" id="battery" autocomplete="off" 
+                                <input type="text" name="battery" id="battery" autocomplete="off" value="{{$well->battery}}"
                                 class="w-full flex rounded-r-md border-0 text-gray-900 shadow-sm  placeholder:text-gray-400 
                                 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                             </div>
@@ -129,91 +130,91 @@
                         <div class="mx-2 mt-4 flex flex-wrap">
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Agua (m3/día):</span>
-                                <input type="text" name="water" id="water" autocomplete="off" 
+                                <input type="text" name="water" id="water" autocomplete="off" value="{{$well->water}}"
                                 class="w-fit rounded-r-md border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                             </div>
 
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Petroleo (m3/día):</span>
-                                <input type="text" name="oil" id="oil" autocomplete="off" 
+                                <input type="text" name="oil" id="oil" autocomplete="off" value="{{$well->oil}}"
                                 class="w-fit rounded-r-md border-0 text-gray-900 shadow-sm  placeholder:text-gray-400 
                                 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                             </div>
                         
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-4 items-center flex bg-gray-300 rounded-l-lg">Gas (m3/día):</span>
-                                <input type="text" name="gas" id="gas" autocomplete="off" 
+                                <input type="text" name="gas" id="gas" autocomplete="off" value="{{$well->gas}}"
                                 class="w-fit rounded-r-md border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                             </div>
 
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Densidad del agua (kg/m^3):</span>
-                                <input type="text" name="water_density" id="water_density" autocomplete="off" 
+                                <input type="text" name="water_density" id="water_density" autocomplete="off" value="{{$well->water_density}}"
                                 class="w-fit flex rounded-r-md border-0 text-gray-900 shadow-sm  placeholder:text-gray-400
                                  sm:text-sm focus:ring-2 focus:ring-indigo-600">
                             </div>
                         
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Densidad del petroleo (deg/API):</span>
-                                <input type="text" name="oil_density" id="oil_density" autocomplete="off" 
+                                <input type="text" name="oil_density" id="oil_density" autocomplete="off" value="{{$well->oil_density}}"
                                 class="w-fit rounded-r-md border-0 text-gray-900 shadow-sm  placeholder:text-gray-400
                                  sm:text-sm focus:ring-2 focus:ring-indigo-600">
                             </div>
                         
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Gravedad específica del gas:</span>
-                                <input type="text" name="gas_gravity" id="gas_gravity" autocomplete="off" 
+                                <input type="text" name="gas_gravity" id="gas_gravity" autocomplete="off" value="{{$well->gas_gravity}}"
                                 class="w-fit flex rounded-r-md border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                             </div>
 
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Viscocidad del fluido (cp):</span>
-                                <input type="text" name="viscocity" id="viscocity" autocomplete="off" 
+                                <input type="text" name="viscocity" id="viscocity" autocomplete="off" value="{{$well->viscocity}}"
                                 class="w-fit flex rounded-r-md border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                             </div>
                             
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-4 items-center flex bg-gray-300 rounded-l-lg">%Co2:</span>
-                                <input type="text" name="co2" id="co2" autocomplete="off" 
+                                <input type="text" name="co2" id="co2" autocomplete="off" value="{{$well->co2}}"
                                 class="w-fit rounded-r-md border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                             </div>
 
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-4 items-center flex bg-gray-300 rounded-l-lg">%N2:</span>
-                                <input type="text" name="n2" id="n2" autocomplete="off" 
+                                <input type="text" name="n2" id="n2" autocomplete="off" value="{{$well->n2}}"
                                 class="w-fit rounded-r-md border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                             </div>
 
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-4 items-center flex bg-gray-300 rounded-l-lg">%H2S:</span>
-                                <input type="text" name="h2s" id="h2s" autocomplete="off" 
+                                <input type="text" name="h2s" id="h2s" autocomplete="off" value="{{$well->h2s}}"
                                 class="w-fit rounded-r-md border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                             </div>
 
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-4 items-center flex bg-gray-300 rounded-l-lg">%C1:</span>
-                                <input type="text" name="c1" id="c1" autocomplete="off" 
+                                <input type="text" name="c1" id="c1" autocomplete="off" value="{{$well->c1}}"
                                 class="w-fit rounded-r-md border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                             </div>
 
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-4 items-center flex bg-gray-300 rounded-l-lg">%C2:</span>
-                                <input type="text" name="c2" id="c2" autocomplete="off" 
+                                <input type="text" name="c2" id="c2" autocomplete="off" value="{{$well->c2}}"
                                 class="w-fit rounded-r-md border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                             </div>
 
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-4 items-center flex bg-gray-300 rounded-l-lg">%NC:</span>
-                                <input type="text" name="nc" id="nc" autocomplete="off" 
+                                <input type="text" name="nc" id="nc" autocomplete="off" value="{{$well->nc}}"
                                 class="w-fit rounded-r-md border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                             </div>
@@ -224,31 +225,51 @@
                         <div class="mx-2 mt-4 flex flex-wrap">
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Tipo de bombeo:</span>
-                                <select id="type" name="type" autocomplete="off" class="w-fit rounded-r-md border-0 
+                                <select id="type" name="type" autocomplete="off" required class="w-fit rounded-r-md border-0 
                                 text-gray-900 shadow-sm  placeholder:text-gray-400 h-fit focus:ring-2 focus:ring-indigo-600">
-                                    <option disabled selected value="">Seleccionar</option>
-                                    <option value="Rod Pump">Rod Pump</option>
-                                    <option value="Flowing Well Gas">Flowing Well (Gas)</option>
-                                    <option value="Flowing Well Oil">Flowing Well (Oil)</option>
-                                    <option value="Gas Lift">Gas Lift</option>
-                                    <option value="Electrical Submersible Pump">Electrical Submersible Pump</option>
-                                    <option value="Plunger Lift">Plunger Lift</option>
-                                    <option value="Plunger Lift with Gas Lift Assambly">Plunger Lift with Gas Lift Assambly</option>
-                                    <option value="Progressive Cavity Pump">Progressive Cavity Pump</option>
+                                    <option selected value="{{$well->type}}">{{$well->type}}</option>
+                                    @if($well->type != "Rod Pump")
+                                        <option value="Rod Pump">Rod Pump</option>
+                                    @endif
+                                    @if($well->type != "Flowing Well Gas")
+                                        <option value="Flowing Well Gas">Flowing Well (Gas)</option>
+                                    @endif
+                                    @if($well->type != "Flowing Well Oil")
+                                        <option value="Flowing Well Oil">Flowing Well (Oil)</option>
+                                    @endif
+                                    @if($well->type != "Gas Lift")
+                                        <option value="Gas Lift">Gas Lift</option>
+                                    @endif
+                                    @if($well->type != "Electrical Submersible Pump")
+                                        <option value="Electrical Submersible Pump">Electrical Submersible Pump</option>
+                                    @endif
+                                    @if($well->type != "Plunger Lift")
+                                        <option value="Plunger Lift">Plunger Lift</option>
+                                    @endif
+                                    @if($well->type != "Plunger Lift with Gas Lift Assambly")
+                                        <option value="Plunger Lift with Gas Lift Assambly">Plunger Lift with Gas Lift Assambly</option>
+                                    @endif
+                                    @if($well->type != "Progressive Cavity Pump")
+                                        <option value="Progressive Cavity Pump">Progressive Cavity Pump</option>
+                                    @endif
+                                    @if($well->type != "Jet Pump")
                                     <option value="Jet Pump">Jet Pump</option>
+                                    @endif
+                                    
+                                    
                                     
                                 </select>
                             </div>
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Diámetro de la barra pulida:</span>
-                                <input type="text" name="polish_rod" id="polish_rod" autocomplete="off" 
+                                <input type="text" name="rod_diameter" id="rod_diameter" autocomplete="off" value="{{$well->rod_diameter}}"
                                 class="w-fit border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                                 <span class="text-gray-900 border-4">[in]</span>
                             </div>
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Longitud barra pulida:</span>
-                                <input type="text" name="rod_length" id="rod_length" autocomplete="off" 
+                                <input type="text" name="rod_length" id="rod_length" autocomplete="off" value="{{$well->rod_length}}"
                                 class="w-fit border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                                 <span class="text-gray-900 border-4">[ft]</span>
@@ -257,28 +278,33 @@
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Motor:</span>
                                 <select id="motor_type" name="motor_type" autocomplete="off" class="w-fit rounded-r-md border-0 
                                 text-gray-900 shadow-sm  placeholder:text-gray-400 h-fit focus:ring-2 focus:ring-indigo-600">
-                                    <option disabled selected value="">Seleccionar</option>
-                                    <option value="electric">Eléctrico</option>
-                                    <option value="combustion">Combustión</option>
+                                    <option selected value="{{$well->motor_type}}">{{$well->motor_type}}</option>
+                                    @if($well->motor_type != "electric")
+                                        <option value="electric">Eléctrico</option>
+                                    @endif
+                                    @if($well->motor_type != "combustion")
+                                        <option value="combustion">Combustión</option>
+                                    @endif
+                                    
                                 </select>
                             </div>
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Potencia:</span>
-                                <input type="text" name="motor_power" id="motor_power" autocomplete="off" 
+                                <input type="text" name="motor_power" id="motor_power" autocomplete="off" value="{{$well->motor_power}}"
                                 class="w-fit border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                                 <span class="text-gray-900 border-4">[HP]</span>
                             </div>
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Largo promedio de junta:</span>
-                                <input type="text" name="average_joint" id="average_joint" autocomplete="off" 
+                                <input type="text" name="average_joint" id="average_joint" autocomplete="off" value="{{$well->average_joint}}"
                                 class="w-fit border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                                 <span class="text-gray-900 border-4">[mts]</span>
                             </div>
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Profundidad de la bomba:</span>
-                                <input type="text" name="pump_depth" id="pump_depth" autocomplete="off" 
+                                <input type="text" name="pump_depth" id="pump_depth" autocomplete="off" value="{{$well->pump_depth}}"
                                 class="w-fit border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                                 <span class="text-gray-900 border-4">[mts]</span>
@@ -290,35 +316,35 @@
                         <div class="mx-2 mt-4 flex flex-wrap">
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Packer:</span>
-                                <input type="text" name="packer" id="packer" autocomplete="off" 
+                                <input type="text" name="packer" id="packer" autocomplete="off" value="{{$well->packer}}" 
                                 class="w-fit border-0 rounded-r-md text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                                 <span class="text-gray-900 border-4">[mts]</span>
                             </div>
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Bridge plug:</span>
-                                <input type="text" name="bridge_plug" id="bridge_plug" autocomplete="off" 
+                                <input type="text" name="bridge_plug" id="bridge_plug" autocomplete="off" value="{{$well->bridge_plug}}"
                                 class="w-fit border-0 rounded-r-md text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                                 <span class="text-gray-900 border-4">[mts]</span>
                             </div>
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Ancla de tubería:</span>
-                                <input type="text" name="tubing_anchor" id="tubing_anchor" autocomplete="off" 
+                                <input type="text" name="tubing_anchor" id="tubing_anchor" autocomplete="off" value="{{$well->tubing_anchor}}"
                                 class="w-fit border-0 rounded-r-md text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                                 <span class="text-gray-900 border-4">[mts]</span>
                             </div>
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Seating nipple:</span>
-                                <input type="text" name="seating_nipple" id="seating_nipple" autocomplete="off" 
+                                <input type="text" name="seating_nipple" id="seating_nipple" autocomplete="off" value="{{$well->seating_nipple}}"
                                 class="w-fit border-0 rounded-r-md text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                                 <span class="text-gray-900 border-4">[mts]</span>
                             </div>
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Pulgback:</span>
-                                <input type="text" name="plugback" id="plugback" autocomplete="off" 
+                                <input type="text" name="plugback" id="plugback" autocomplete="off" value="{{$well->plugback}}" 
                                 class="w-fit border-0 rounded-r-md text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                                 <span class="text-gray-900 border-4">[mts]</span>
@@ -330,14 +356,14 @@
                         <div class="mx-2 mt-4 flex flex-wrap">
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Fabricante:</span>
-                                <input type="text" name="manufacturer_unit" id="manufacturer_unit" autocomplete="off" 
+                                <input type="text" name="manufacturer_unit" id="manufacturer_unit" autocomplete="off" value="{{$well->manufacturer_unit}}"  
                                 class="w-fit border-0 rounded-r-md text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                                 
                             </div>
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Designación API:</span>
-                                <input type="text" name="api_unit" id="api_unit" autocomplete="off" 
+                                <input type="text" name="api_unit" id="api_unit" autocomplete="off"  value="{{$well->api_unit}}"
                                 class="w-fit border-0 rounded-r-md text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
                                
