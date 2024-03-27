@@ -19,7 +19,7 @@
 
         {{-- Captcha --}}
         {{-- {!! NoCaptcha::renderJs() !!} --}}
-        <script src="https://www.google.com/recaptcha/api.js?render=6LdDCyspAAAAANoSf36rTdU26kAG0ITRJ3_zTvWQ"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=6Lcj26YpAAAAAPgC433TFIs3dDZuBejB0_ha8Q6N"></script>
         
     </head>
     <body class="font-sans antialiased bg-gray-300">
