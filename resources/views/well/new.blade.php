@@ -161,7 +161,7 @@
                                 class="w-fit rounded-r-md border-0 text-gray-900 shadow-sm  
                                 placeholder:text-gray-400 sm:text-sm focus:ring-0 focus:ring-indigo-600">
 
-                                <select id="oil_units" name="oil_units" class="w-fit rounded-r-md border-0 outline-0 
+                                <select id="gas_units" name="oil_units" class="w-fit rounded-r-md border-0 outline-0 
                                 text-gray-900  placeholder:text-gray-400 h-fit focus:ring-0 focus:border-0 focus:outline-0">
                                     
                                     <option value="m3/día" selected>m3/día</option>
@@ -381,51 +381,7 @@
                 </div>
               </div>
             </div>
-            {{-- Listado de clientes --}}
-            {{-- <div
-              class=" bg-white dark:border-neutral-600 dark:bg-neutral-800">
-                <h2 class="mb-0" id="headingTwo">
-                <button
-                class="bg-blue-500 group relative flex w-full items-center border-0  px-5 py-4 text-left text-base
-                transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none text-white"
-                    type="button"
-                    data-te-collapse-init
-                    data-te-collapse-collapsed
-                    data-te-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo">
-                    Listado de clientes
-                    <span
-                    class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 
-                    ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 
-                    group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 
-                    dark:group-[[data-te-collapse-collapsed]]:fill-white" id="iconTwo">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="h-6 w-6">
-                        <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                    </svg>
-                    </span>
-                </button>
-                </h2>
-                <div
-                id="collapseTwo"
-                class="!visible hidden"
-                data-te-collapse-item
-                aria-labelledby="headingTwo"
-                data-te-parent="#accordionExample">
-                    <div class="px-5 py-4">
-                        @livewire('show-wells',['wells'=>$clients])
-                    </div>
-                </div>
-            </div> --}}
+           
         </div>
     </div>
     
