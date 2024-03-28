@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+{{-- <html lang="{{ str_replace('_', '-', app()->getLocale()) }}"> --}}
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +19,7 @@
 
         {{-- Captcha --}}
         {{-- {!! NoCaptcha::renderJs() !!} --}}
-        <script src="https://www.google.com/recaptcha/api.js?render=6Lcj26YpAAAAAPgC433TFIs3dDZuBejB0_ha8Q6N"></script>
+        {{-- <script src="https://www.google.com/recaptcha/api.js?render=6Lcj26YpAAAAAPgC433TFIs3dDZuBejB0_ha8Q6N"></script> --}}
         
     </head>
     <body class="font-sans antialiased bg-gray-300">
