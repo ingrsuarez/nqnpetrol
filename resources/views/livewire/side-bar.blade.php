@@ -94,35 +94,35 @@
         <button onclick="showMenu1(true)" class="focus:outline-none focus:text-indigo-400 text-left  text-white flex justify-between items-center w-full space-x-14 ">
             <span class="px-6 text-[0.8rem] font-bold uppercase text-gray-300 dark:text-gray-400">
             RRHH:</span>
-            <svg id="icon1" class="transform" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg id="icon1" class="transform rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 15L12 9L6 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
         </button>
-        <div id="menu1" class="flex justify-start  flex-col w-full md:w-auto">
-
-            <a class="text-gray-300 flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem]
-            data-[active=active]:bg-slate-50  data-[active=active]:text-inherit
-            hover:bg-slate-50 hover:text-inherit hover:outline-none
-            focus:bg-slate-50 focus:text-inherit focus:outline-none"
-            data-active="{{ Route::currentRouteName()=='employee.new' ? 'active' : ''}}"
-            href="{{route('employee.new')}}">
-                
-                <span
-                    class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
-                    <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        fill="none" 
-                        width="800px" 
-                        height="800px" 
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor">
-                        <path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                    </svg>
-                </span>
-                <span>Nuevo empleado </span>
-            </a>
-
+        <div id="menu1" class="hidden justify-start  flex-col w-full md:w-auto">
+            @can('rrhh')
+                <a class="text-gray-300 flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem]
+                data-[active=active]:bg-slate-50  data-[active=active]:text-inherit
+                hover:bg-slate-50 hover:text-inherit hover:outline-none
+                focus:bg-slate-50 focus:text-inherit focus:outline-none"
+                data-active="{{ Route::currentRouteName()=='employee.new' ? 'active' : ''}}"
+                href="{{route('employee.new')}}">
+                    
+                    <span
+                        class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            width="800px" 
+                            height="800px" 
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor">
+                            <path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                    </span>
+                    <span>Nuevo empleado </span>
+                </a>
+            @endcan
             <a class="text-gray-300 flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem]
             data-[active=active]:bg-slate-50  data-[active=active]:text-inherit
             hover:bg-slate-50 hover:text-inherit hover:outline-none
@@ -167,32 +167,32 @@
                 <span>Organigrama </span>
             </a>
 
-
-            <a class="text-gray-300 flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem]
-            data-[active=active]:bg-slate-50  data-[active=active]:text-inherit
-            hover:bg-slate-50 hover:text-inherit hover:outline-none
-            focus:bg-slate-50 focus:text-inherit focus:outline-none"
-            data-active="{{ Route::currentRouteName()=='job.new' ? 'active' : ''}}"
-            href="{{route('job.new')}}">
-                
-                <span
-                    class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="h-5 w-5">
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M12 4.5v15m7.5-7.5h-15" />
-                    </svg>
-                </span>
-                <span>Nuevo Puesto</span>
-            </a>
-
+            @can('rrhh')
+                <a class="text-gray-300 flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem]
+                data-[active=active]:bg-slate-50  data-[active=active]:text-inherit
+                hover:bg-slate-50 hover:text-inherit hover:outline-none
+                focus:bg-slate-50 focus:text-inherit focus:outline-none"
+                data-active="{{ Route::currentRouteName()=='job.new' ? 'active' : ''}}"
+                href="{{route('job.new')}}">
+                    
+                    <span
+                        class="mr-4 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="h-5 w-5">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                    </span>
+                    <span>Nuevo Puesto</span>
+                </a>
+            
             <a class="text-gray-300 flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem]
             data-[active=active]:bg-slate-50  data-[active=active]:text-inherit
             hover:bg-slate-50 hover:text-inherit hover:outline-none
@@ -260,6 +260,7 @@
                 </span>
                 <span>Categorías </span>
             </a>
+            @endcan
         </div>
     </li>
     
@@ -272,7 +273,7 @@
                     <path d="M18 15L12 9L6 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </button>
-            <div id="menu2" class="hidden flex justify-start  flex-col w-full md:w-auto">
+            <div id="menu2" class="hidden justify-start  flex-col w-full md:w-auto">
 
                 <a class="text-gray-300 flex cursor-pointer items-center truncate rounded-[5px] px-6 py-[0.45rem] text-[0.85rem]
                 data-[active=active]:bg-slate-50  data-[active=active]:text-inherit
