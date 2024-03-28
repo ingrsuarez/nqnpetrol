@@ -8,7 +8,7 @@
               class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
               <h2 class="mb-0 " id="headingOne">
                 <button
-                  class="bg-blue-500 group relative flex w-full items-center rounded-t-[15px] border-0  px-5 py-4 text-left text-base text-neutral-800
+                  class="bg-blue-500 group relative flex w-full items-center rounded-t-[15px] border-0  px-5 py-4 text-left text-base
                    hover:z-[2] focus:z-[3] focus:outline-none text-white"
                   
                   type="button"
@@ -21,7 +21,7 @@
                     class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white"
                     id="iconOne">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
+                      
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
@@ -183,8 +183,8 @@
               class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
                 <h2 class="mb-0" id="headingTwo">
                 <button
-                class="bg-blue-500 group relative flex w-full items-center border-0  px-5 py-4 text-left text-base text-neutral-800
-                hover:z-[2] focus:z-[3] focus:outline-none text-white"
+                class="bg-blue-500 group relative flex w-full items-center border-0  px-5 py-4 text-left text-base
+                hover:z-[2] focus:z-[3] focus:outline-none"
                     type="button"
                     data-te-collapse-init
                     data-te-collapse-collapsed
@@ -198,7 +198,7 @@
                     group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 
                     dark:group-[[data-te-collapse-collapsed]]:fill-white" id="iconTwo">
                     <svg
-                        xmlns="http://www.w3.org/2000/svg"
+                        
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
