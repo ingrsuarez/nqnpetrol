@@ -43,7 +43,7 @@ Route::middleware([
     Route::get('wells/dashboard',[App\Http\Controllers\WellController::class, 'dashboard'])
         ->middleware('can:well.dashboard')
         ->name('well.dashboard');
-    Route::get('wells/new',[App\Http\Controllers\WellController::class, 'new'])
+    Route::get('well/new',[App\Http\Controllers\WellController::class, 'new'])
         ->middleware('can:well.new')
         ->name('well.new');
     Route::get('wells/edit/{well}',[App\Http\Controllers\WellController::class, 'edit'])
