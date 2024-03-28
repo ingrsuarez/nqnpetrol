@@ -7,7 +7,7 @@
                 <h2 class="mb-0" id="headingTwo">
                 <button
                 class="rounded-t-lg bg-blue-500 group relative flex w-full items-center border-0  px-5 py-4 text-left text-base
-                transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none text-white"
+                hover:z-[2] focus:z-[3] focus:outline-none text-white"
                     type="button"
                     data-te-collapse-init
                     data-te-collapse-collapsed
