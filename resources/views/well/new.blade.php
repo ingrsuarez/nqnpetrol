@@ -22,8 +22,8 @@
                     stroke-width="3"
                     stroke="currentColor" 
                     version="1.2" 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    
+                    
                     viewBox="-377 383 256 256" 
                     >
                     <g>
@@ -53,7 +53,7 @@
 
                     <svg
                       id="iconOne"
-                      xmlns="http://www.w3.org/2000/svg"
+                      
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
@@ -82,41 +82,40 @@
                         <p class="mt-1 text-sm leading-6 text-gray-600">Datos del pozo:</p>
                         
                         <div class="mx-2 mt-4 flex flex-wrap">
-                            <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
+                            <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex focus-within:ring-2 focus-within:ring-indigo-600">
                                 <span class="w-fit px-2 items-center flex text-base bg-gray-300 rounded-l-lg  ">Nombre:</span>
                                 <input type="text" name="name" id="name" autocomplete="off" required autofocus
                                     class="w-full rounded-r-md border-0 text-gray-900 placeholder:text-gray-400 
-                                    sm:text-sm focus:ring-2 focus:ring-indigo-600">
+                                    sm:text-sm focus:ring-0">
                             </div>
-                            <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
+                            <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex focus-within:ring-2 focus-within:ring-indigo-600">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Yacimiento:</span>
                                 <input type="text" name="oilfield" id="oilfield" required
                                 class="w-full flex rounded-r-md border-0 text-gray-900 shadow-sm  placeholder:text-gray-400 
-                                sm:text-sm focus:ring-2 focus:ring-indigo-600">
+                                sm:text-sm focus:ring-0">
                             </div>
-                            <div class="m-2 h-fit border-slate-400 border-2 rounded-lg justify-items-stretch flex">
+                            <div class="m-2 h-fit border-slate-400 border-2 rounded-lg justify-items-stretch flex focus-within:ring-2 focus-within:ring-indigo-600">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Cliente:</span>
                                 <select id="client_id" name="client_id" autocomplete="off" class="w-full h-fit flex rounded-r-md border-0 
-                                text-gray-900 shadow-sm  placeholder:text-gray-400 focus:ring-2 focus:ring-indigo-600" required>
+                                text-gray-900 shadow-sm  placeholder:text-gray-400 focus:ring-0" required>
                                     <option disabled selected value="">Seleccionar</option>
                                     @foreach ($clients as $client)
                                         <option value="{{$client->id}}">{{$client->name}}</option>
                                     @endforeach   
                                 </select>
                             </div>
-                            <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
+                            <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex focus-within:ring-2 focus-within:ring-indigo-600">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Ubicación:</span>
                                 <input type="text" name="location" id="location" 
-                                class="w-full rounded-r-md border-0 text-gray-900 shadow-sm  placeholder:text-gray-400 sm:text-sm 
-                                focus:ring-2 focus:ring-indigo-600">
+                                class="w-full rounded-r-md border-0 text-gray-900 shadow-sm  placeholder:text-gray-400 sm:text-sm">
                             </div>
 
 
-                            <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
+                            <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex focus-within:ring-2 focus-within:ring-indigo-600">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Batería:</span>
                                 <input type="text" name="battery" id="battery" autocomplete="off" 
                                 class="w-full flex rounded-r-md border-0 text-gray-900 shadow-sm  placeholder:text-gray-400 
-                                sm:text-sm focus:ring-2 focus:ring-indigo-600">
+                                sm:text-sm">
                             </div>
 
 
@@ -125,25 +124,51 @@
 
                         <p class="mt-8 text-sm leading-6 text-gray-600">Datos de producción:</p>
                         <div class="mx-2 mt-4 flex flex-wrap">
-                            <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
-                                <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Agua (m3/día):</span>
-                                <input type="text" name="water" id="water" autocomplete="off" 
+                            <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex focus-within:ring-2 focus-within:ring-indigo-600">
+                                <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Agua:</span>
+                                <input type="number" step="0.1" name="water" id="water" autocomplete="off" 
                                 class="w-fit rounded-r-md border-0 text-gray-900 shadow-sm  
-                                placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
+                                placeholder:text-gray-400 sm:text-sm focus:ring-0">
+
+                                <select id="water_units" name="water_units" class="w-fit rounded-r-md border-0 outline-0 
+                                text-gray-900  placeholder:text-gray-400 h-fit focus:ring-0">
+                                    
+                                    <option value="m3/día" selected>m3/día</option>
+                                    <option value="bbl/día">BBL/día</option>
+                                    
+                                    
+                                </select>
                             </div>
 
-                            <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
+                            <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex focus-within:ring-2 focus-within:ring-indigo-600">
                                 <span class="w-fit px-2 items-center flex bg-gray-300 rounded-l-lg">Petroleo (m3/día):</span>
                                 <input type="text" name="oil" id="oil" autocomplete="off" 
                                 class="w-fit rounded-r-md border-0 text-gray-900 shadow-sm  placeholder:text-gray-400 
-                                sm:text-sm focus:ring-2 focus:ring-indigo-600">
+                                sm:text-sm focus:ring-0">
+                                <select id="oil_units" name="oil_units" class="w-fit rounded-r-md border-0 outline-0 
+                                text-gray-900  placeholder:text-gray-400 h-fit focus:ring-0 focus:border-0 focus:outline-0">
+                                    
+                                    <option value="m3/día" selected>m3/día</option>
+                                    <option value="bbl/día">BBL/día</option>
+                                    
+                                    
+                                </select>
                             </div>
                         
-                            <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
+                            <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex focus-within:ring-2 focus-within:ring-indigo-600">
                                 <span class="w-fit px-4 items-center flex bg-gray-300 rounded-l-lg">Gas (m3/día):</span>
                                 <input type="text" name="gas" id="gas" autocomplete="off" 
                                 class="w-fit rounded-r-md border-0 text-gray-900 shadow-sm  
-                                placeholder:text-gray-400 sm:text-sm focus:ring-2 focus:ring-indigo-600">
+                                placeholder:text-gray-400 sm:text-sm focus:ring-0 focus:ring-indigo-600">
+
+                                <select id="oil_units" name="oil_units" class="w-fit rounded-r-md border-0 outline-0 
+                                text-gray-900  placeholder:text-gray-400 h-fit focus:ring-0 focus:border-0 focus:outline-0">
+                                    
+                                    <option value="m3/día" selected>m3/día</option>
+                                    <option value="bbl/día">BBL/día</option>
+                                    
+                                    
+                                </select>
                             </div>
 
                             <div class="m-2 border-slate-400 border-2 rounded-lg justify-items-stretch flex">
